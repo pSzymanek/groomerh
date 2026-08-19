@@ -1,0 +1,101 @@
+/* Restyle flatpickr to match the legacy Booknetic datepicker look:
+   gray boxed day cells, underlined selection (no blue pill), no border on today. */
+
+.flatpickr-calendar {
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+    /* Must exceed Custom Forms' select2 dropdown z-index (9999999). */
+    z-index: 99999999 !important;
+}
+
+.flatpickr-day {
+    background: #f1f5f9;
+    color: #1e1e1e;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    max-width: none;
+    height: 38px;
+    line-height: 38px;
+    margin: 2px 0;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day:focus {
+    background: #e2e8f0;
+    border: none;
+}
+
+/* Selected day — underline instead of blue circle */
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.startRange,
+.flatpickr-day.selected.endRange {
+    background: #f1f5f9;
+    color: #1e1e1e;
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+/* Today — no special border, blends with the rest */
+.flatpickr-day.today,
+.flatpickr-day.today:hover,
+.flatpickr-day.today:focus {
+    border: none;
+    background: #f1f5f9;
+    color: #1e1e1e;
+}
+
+.flatpickr-day.today.selected {
+    text-decoration: underline;
+}
+
+/* Disabled / past dates and adjacent-month days — transparent + light gray */
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+    background: transparent;
+    color: #cbd5e1;
+    cursor: default;
+}
+
+/* Weekday header */
+.flatpickr-weekday {
+    color: #94a3b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* Month / year header */
+.flatpickr-months .flatpickr-month {
+    color: #1e1e1e;
+}
+
+.flatpickr-current-month {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
+    font-weight: 500;
+}
+
+/* Navigation arrows — subtle */
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+    fill: #475569;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+    fill: #1e1e1e;
+}

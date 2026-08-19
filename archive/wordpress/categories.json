@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://groomerhouse.pl/category/bez-kategorii/",
+    "name": "Bez kategorii",
+    "slug": "bez-kategorii",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "count": 1,
+    "description": "",
+    "link": "https://groomerhouse.pl/category/kursy-groomerskie/",
+    "name": "Kursy groomerskie",
+    "slug": "kursy-groomerskie",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories/14",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/posts?categories=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "count": 0,
+    "description": "",
+    "link": "https://groomerhouse.pl/category/pielegnacja-zwierzat/",
+    "name": "Pielęgnacja zwierząt",
+    "slug": "pielegnacja-zwierzat",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories/15",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://groomerhouse.pl/wp-json/wp/v2/posts?categories=15"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

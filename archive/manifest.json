@@ -1,0 +1,3292 @@
+{
+  "exportedAt": "2026-08-19T15:07:41.543Z",
+  "origin": "https://groomerhouse.pl",
+  "counts": {
+    "pages": 10,
+    "posts": 1,
+    "media": 100,
+    "assets": 550
+  },
+  "pages": [
+    "https://groomerhouse.pl/",
+    "https://groomerhouse.pl/kurs-grooming-kotow/",
+    "https://groomerhouse.pl/kurs-groomerski/",
+    "https://groomerhouse.pl/podstawowy-kurs-groomerski-slask/",
+    "https://groomerhouse.pl/cennik/",
+    "https://groomerhouse.pl/blog/",
+    "https://groomerhouse.pl/polityka-prywatnosci/",
+    "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/"
+  ],
+  "assets": [
+    {
+      "url": "https://groomerhouse.pl/",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 106431,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/feed/",
+      "file": "mirror\\groomerhouse.pl\\feed\\index.html",
+      "bytes": 2684,
+      "type": "application/rss+xml; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/comments/feed/",
+      "file": "mirror\\groomerhouse.pl\\comments\\feed\\index.html",
+      "bytes": 1863,
+      "type": "application/rss+xml; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2277,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2277,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/bootstrap-booknetic.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\bootstrap-booknetic.css",
+      "bytes": 4977,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/booknetic.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\booknetic.css",
+      "bytes": 85421,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Backend/Base/assets/css/select2.min.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Backend\\Base\\assets\\css\\select2.min.css",
+      "bytes": 14954,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/intlTelInput.min.css?v=1.3.3&#038;ver=27.0.17",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\intlTelInput.min.css",
+      "bytes": 15256,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Backend/Base/assets/css/select2-bootstrap.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Backend\\Base\\assets\\css\\select2-bootstrap.css",
+      "bytes": 22090,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/booknetic-popup.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\booknetic-popup.css",
+      "bytes": 1828,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/flatpickr.min.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\flatpickr.min.css",
+      "bytes": 16166,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/css/datepicker-overrides.css?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\css\\datepicker-overrides.css",
+      "bytes": 2357,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-customforms/assets/frontend/css/custom_forms.css?v=3.0.1&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-customforms\\assets\\frontend\\css\\custom_forms.css",
+      "bytes": 651,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.5",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\themes\\hello-elementor\\assets\\css\\reset.css",
+      "bytes": 5456,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.5",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\themes\\hello-elementor\\assets\\css\\theme.css",
+      "bytes": 5097,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.44.0",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\css\\elementor-icons.min.css",
+      "bytes": 21256,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\frontend.min.css",
+      "bytes": 53614,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-8.css?ver=1786548311",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-8.css",
+      "bytes": 1224,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-image.min.css",
+      "bytes": 254,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.32.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\css\\widget-nav-menu.min.css",
+      "bytes": 27364,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-heading.min.css",
+      "bytes": 600,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\e-animation-grow.min.css",
+      "bytes": 198,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/slideInLeft.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\slideInLeft.min.css",
+      "bytes": 153,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/bounce.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\bounce.min.css",
+      "bytes": 426,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-icon-box.min.css",
+      "bytes": 5846,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-image-box.min.css",
+      "bytes": 1494,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-pop.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\e-animation-pop.min.css",
+      "bytes": 278,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\zoomIn.min.css",
+      "bytes": 106,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-divider.min.css",
+      "bytes": 4298,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-google_maps.min.css",
+      "bytes": 301,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-icon-list.min.css",
+      "bytes": 10470,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-social-icons.min.css",
+      "bytes": 5150,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\conditionals\\apple-webkit.min.css",
+      "bytes": 7025,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/conditionals/shapes.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\conditionals\\shapes.min.css",
+      "bytes": 645,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-92.css?ver=1786548311",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-92.css",
+      "bytes": 68763,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "bytes": 58071,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\css\\solid.min.css",
+      "bytes": 669,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\css\\brands.min.css",
+      "bytes": 675,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\jquery\\jquery.min.js",
+      "bytes": 87553,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\jquery\\jquery-migrate.min.js",
+      "bytes": 13577,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=0.2.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\pixelyoursite\\dist\\scripts\\jquery.bind-first-0.2.3.min.js",
+      "bytes": 1317,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\pixelyoursite\\dist\\scripts\\js.cookie-2.1.3.min.js",
+      "bytes": 1709,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\pixelyoursite\\dist\\scripts\\tld.min.js",
+      "bytes": 141079,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.1.5.1",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\pixelyoursite\\dist\\scripts\\public.js",
+      "bytes": 159210,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\index.html",
+      "bytes": 367522,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/92",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\92.html",
+      "bytes": 63673,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/xmlrpc.php?rsd",
+      "error": "403 Forbidden: https://groomerhouse.pl/xmlrpc.php?rsd"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_2.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_2.png",
+      "bytes": 708,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/BOOKSY-2.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\BOOKSY-2.png",
+      "bytes": 84838,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 106431,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo-groomer-house-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo-groomer-house-1024x1024.png",
+      "bytes": 116744,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-groomerski/",
+      "file": "mirror\\groomerhouse.pl\\kurs-groomerski\\index.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/podstawowy-kurs-groomerski-slask/",
+      "file": "mirror\\groomerhouse.pl\\podstawowy-kurs-groomerski-slask\\index.html",
+      "bytes": 128715,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-grooming-kotow/",
+      "file": "mirror\\groomerhouse.pl\\kurs-grooming-kotow\\index.html",
+      "bytes": 124260,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/cennik/",
+      "file": "mirror\\groomerhouse.pl\\cennik\\index.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/blog/",
+      "file": "mirror\\groomerhouse.pl\\blog\\index.html",
+      "bytes": 53929,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/cennik-uslug",
+      "file": "mirror\\groomerhouse.pl\\cennik-uslug.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-groomerski",
+      "file": "mirror\\groomerhouse.pl\\kurs-groomerski.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/40.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\40.png",
+      "bytes": 594983,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/39.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\39.png",
+      "bytes": 640421,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/42.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\42.png",
+      "bytes": 491168,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/41.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\41.png",
+      "bytes": 494733,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-zeby.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-zeby.png",
+      "bytes": 502484,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/34.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\34.png",
+      "bytes": 38542,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/35.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\35.png",
+      "bytes": 39684,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/33.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\33.png",
+      "bytes": 49250,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/37.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\37.png",
+      "bytes": 63598,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/32.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\32.png",
+      "bytes": 63996,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/36.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\36.png",
+      "bytes": 35560,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo-groomer-house.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo-groomer-house.png",
+      "bytes": 243013,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/booknetic.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\booknetic.js",
+      "bytes": 79711,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Backend/Base/assets/js/select2.min.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Backend\\Base\\assets\\js\\select2.min.js",
+      "bytes": 70851,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/intlTelInput.min.js?v=1.3.3&#038;ver=27.0.17",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\intlTelInput.min.js",
+      "bytes": 309789,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/jquery.nicescroll.min.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\jquery.nicescroll.min.js",
+      "bytes": 59925,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/recurring_appointments.init.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\recurring_appointments.init.js",
+      "bytes": 917,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_confirm_details.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_confirm_details.js",
+      "bytes": 3176,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_date_time.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_date_time.js",
+      "bytes": 8769,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_information.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_information.js",
+      "bytes": 13725,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_locations.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_locations.js",
+      "bytes": 1529,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_recurring_info.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_recurring_info.js",
+      "bytes": 15123,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_service_extras.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_service_extras.js",
+      "bytes": 10403,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_services.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_services.js",
+      "bytes": 6457,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_staff.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_staff.js",
+      "bytes": 637,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/steps/step_cart.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\steps\\step_cart.js",
+      "bytes": 10459,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/booknetic-popup.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\booknetic-popup.js",
+      "bytes": 3717,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/flatpickr.js?v=1.3.3&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\flatpickr.js",
+      "bytes": 124182,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-customforms/assets/general/js/init_conditions.js?v=3.0.1&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-customforms\\assets\\general\\js\\init_conditions.js",
+      "bytes": 20223,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-customforms/assets/general/js/validate_input.js?v=3.0.1&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-customforms\\assets\\general\\js\\validate_input.js",
+      "bytes": 6532,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-customforms/assets/frontend/js/init.js?v=3.0.1&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-customforms\\assets\\frontend\\js\\init.js",
+      "bytes": 6139,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-payment-paypal/assets/frontend/js/init.js?v=1.7.0&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-payment-paypal\\assets\\frontend\\js\\init.js",
+      "bytes": 4798,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic-payment-stripe/assets/frontend/js/init.js?v=1.9.0&#038;ver=1.3.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic-payment-stripe\\assets\\frontend\\js\\init.js",
+      "bytes": 4803,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\js\\webpack.runtime.min.js",
+      "bytes": 5707,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\js\\frontend-modules.min.js",
+      "bytes": 59579,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\jquery\\ui\\core.min.js",
+      "bytes": 21464,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\js\\frontend.min.js",
+      "bytes": 32362,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\lib\\smartmenus\\jquery.smartmenus.min.js",
+      "bytes": 24109,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.32.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\js\\webpack-pro.runtime.min.js",
+      "bytes": 6248,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\dist\\hooks.min.js",
+      "bytes": 5050,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\dist\\i18n.min.js",
+      "bytes": 5732,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.32.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\js\\frontend.min.js",
+      "bytes": 24288,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.32.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\js\\elements-handlers.min.js",
+      "bytes": 44670,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo-groomer-house-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo-groomer-house-300x300.png",
+      "bytes": 14632,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo-groomer-house-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo-groomer-house-150x150.png",
+      "bytes": 4973,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo-groomer-house-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo-groomer-house-768x768.png",
+      "bytes": 72470,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/40-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\40-300x300.png",
+      "bytes": 70027,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/40-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\40-1024x1024.png",
+      "bytes": 660942,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/40-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\40-150x150.png",
+      "bytes": 20295,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/40-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\40-768x768.png",
+      "bytes": 379911,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/39-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\39-300x300.png",
+      "bytes": 64345,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/39-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\39-1024x1024.png",
+      "bytes": 636330,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/39-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\39-150x150.png",
+      "bytes": 18645,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/39-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\39-768x768.png",
+      "bytes": 361572,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/42-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\42-300x300.png",
+      "bytes": 58561,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/42-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\42-1024x1024.png",
+      "bytes": 519628,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/42-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\42-150x150.png",
+      "bytes": 18325,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/42-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\42-768x768.png",
+      "bytes": 298785,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/41-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\41-300x300.png",
+      "bytes": 60625,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/41-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\41-1024x1024.png",
+      "bytes": 558110,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/41-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\41-150x150.png",
+      "bytes": 18715,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/41-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\41-768x768.png",
+      "bytes": 320823,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-zeby-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-zeby-300x300.png",
+      "bytes": 64104,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-zeby-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-zeby-1024x1024.png",
+      "bytes": 591947,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-zeby-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-zeby-150x150.png",
+      "bytes": 20315,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-zeby-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-zeby-768x768.png",
+      "bytes": 334231,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/34-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\34-300x300.png",
+      "bytes": 7287,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/34-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\34-1024x1024.png",
+      "bytes": 32867,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/34-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\34-150x150.png",
+      "bytes": 3634,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/34-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\34-768x768.png",
+      "bytes": 22971,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/35-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\35-300x300.png",
+      "bytes": 11440,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/35-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\35-1024x1024.png",
+      "bytes": 49062,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/35-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\35-150x150.png",
+      "bytes": 5182,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/35-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\35-768x768.png",
+      "bytes": 35238,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/33-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\33-300x300.png",
+      "bytes": 9510,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/33-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\33-1024x1024.png",
+      "bytes": 49111,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/33-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\33-150x150.png",
+      "bytes": 4801,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/33-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\33-768x768.png",
+      "bytes": 32308,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/37-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\37-300x300.png",
+      "bytes": 11616,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/37-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\37-1024x1024.png",
+      "bytes": 66660,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/37-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\37-150x150.png",
+      "bytes": 6385,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/37-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\37-768x768.png",
+      "bytes": 46711,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/32-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\32-300x300.png",
+      "bytes": 11698,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/32-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\32-1024x1024.png",
+      "bytes": 67289,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/32-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\32-150x150.png",
+      "bytes": 5257,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/32-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\32-768x768.png",
+      "bytes": 41111,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/36-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\36-300x300.png",
+      "bytes": 8397,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/36-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\36-1024x1024.png",
+      "bytes": 36849,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/36-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\36-150x150.png",
+      "bytes": 4070,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/36-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\36-768x768.png",
+      "bytes": 24947,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/r",
+      "error": "404 Not Found: https://groomerhouse.pl/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fkurs-grooming-kotow%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2335,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fkurs-grooming-kotow%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2335,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\fadeIn.min.css",
+      "bytes": 77,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\fadeInLeft.min.css",
+      "bytes": 137,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\fadeInRight.min.css",
+      "bytes": 139,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\animations\\styles\\fadeInUp.min.css",
+      "bytes": 130,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-690.css?ver=1786558027",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-690.css",
+      "bytes": 33645,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/690",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\690.html",
+      "bytes": 84338,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=690",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 124260,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-grooming-kotow/#content",
+      "file": "mirror\\groomerhouse.pl\\kurs-grooming-kotow\\index.html",
+      "bytes": 124260,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-groomingu-kotow.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-groomingu-kotow.jpg",
+      "bytes": 53146,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-groomingu-kotow-300x169.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-groomingu-kotow-300x169.jpg",
+      "bytes": 13526,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-groomingu-kotow-1024x576.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-groomingu-kotow-1024x576.jpg",
+      "bytes": 73501,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-groomingu-kotow-768x432.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-groomingu-kotow-768x432.jpg",
+      "bytes": 47967,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-grooming-kotow/r",
+      "error": "404 Not Found: https://groomerhouse.pl/kurs-grooming-kotow/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fkurs-groomerski%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2303,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fkurs-groomerski%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2303,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-tabs.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-tabs.min.css",
+      "bytes": 4329,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/css/widget-toggle.min.css?ver=3.32.4",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\css\\widget-toggle.min.css",
+      "bytes": 1587,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-223.css?ver=1786549399",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-223.css",
+      "bytes": 21544,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/223",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\223.html",
+      "bytes": 150375,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=223",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-groomerski/#content",
+      "file": "mirror\\groomerhouse.pl\\kurs-groomerski\\index.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/44-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\44-1024x1024.png",
+      "bytes": 565374,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/11/Zrzut-ekranu-2025-11-1-o-18.18.00-1024x868.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\11\\Zrzut-ekranu-2025-11-1-o-18.18.00-1024x868.jpeg",
+      "bytes": 147893,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/polityka-prywatnosci",
+      "file": "mirror\\groomerhouse.pl\\polityka-prywatnosci.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/44-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\44-300x300.png",
+      "bytes": 62077,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/44-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\44-150x150.png",
+      "bytes": 18612,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/44-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\44-768x768.png",
+      "bytes": 329419,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/44.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\44.png",
+      "bytes": 533096,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/11/Zrzut-ekranu-2025-11-1-o-18.18.00-300x254.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\11\\Zrzut-ekranu-2025-11-1-o-18.18.00-300x254.jpeg",
+      "bytes": 21406,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/11/Zrzut-ekranu-2025-11-1-o-18.18.00-768x651.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\11\\Zrzut-ekranu-2025-11-1-o-18.18.00-768x651.jpeg",
+      "bytes": 94564,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/11/Zrzut-ekranu-2025-11-1-o-18.18.00.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\11\\Zrzut-ekranu-2025-11-1-o-18.18.00.jpeg",
+      "bytes": 389373,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-groomerski/r",
+      "error": "404 Not Found: https://groomerhouse.pl/kurs-groomerski/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fpodstawowy-kurs-groomerski-slask%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2781,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fpodstawowy-kurs-groomerski-slask%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2781,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-542.css?ver=1786577196",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-542.css",
+      "bytes": 34563,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/542",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\542.html",
+      "bytes": 86652,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=542",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 128715,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/podstawowy-kurs-groomerski-slask/#content",
+      "file": "mirror\\groomerhouse.pl\\podstawowy-kurs-groomerski-slask\\index.html",
+      "bytes": 128715,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-grooming-psow.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-grooming-psow.jpg",
+      "bytes": 65937,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-grooming-psow-300x169.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-grooming-psow-300x169.jpg",
+      "bytes": 17337,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-grooming-psow-1024x576.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-grooming-psow-1024x576.jpg",
+      "bytes": 91981,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-grooming-psow-768x432.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-grooming-psow-768x432.jpg",
+      "bytes": 61232,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/podstawowy-kurs-groomerski-slask/r",
+      "error": "404 Not Found: https://groomerhouse.pl/podstawowy-kurs-groomerski-slask/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fcennik%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2252,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fcennik%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2252,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-146.css?ver=1786552152",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-146.css",
+      "bytes": 20665,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/146",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\146.html",
+      "bytes": 45545,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=146",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/cennik/#content",
+      "file": "mirror\\groomerhouse.pl\\cennik\\index.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/43.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\43.png",
+      "bytes": 453402,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/43-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\43-300x300.png",
+      "bytes": 59251,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/43-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\43-1024x1024.png",
+      "bytes": 512914,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/43-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\43-150x150.png",
+      "bytes": 17969,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/43-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\43-768x768.png",
+      "bytes": 297755,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/cennik/r",
+      "error": "404 Not Found: https://groomerhouse.pl/cennik/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=3.32.3",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor-pro\\assets\\css\\widget-posts.min.css",
+      "bytes": 16967,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-564.css?ver=1786585505",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-564.css",
+      "bytes": 9892,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/blog/#content",
+      "file": "mirror\\groomerhouse.pl\\blog\\index.html",
+      "bytes": 53929,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/imagesloaded.min.js?ver=5.0.0",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\imagesloaded.min.js",
+      "bytes": 5520,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/blog/r",
+      "error": "404 Not Found: https://groomerhouse.pl/blog/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/polityka-prywatnosci/",
+      "file": "mirror\\groomerhouse.pl\\polityka-prywatnosci\\index.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fpolityka-prywatnosci%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2337,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2Fpolityka-prywatnosci%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2337,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-477.css?ver=1787016902",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-477.css",
+      "bytes": 574,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/pages/477",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\pages\\477.html",
+      "bytes": 13093,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=477",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/polityka-prywatnosci/#content",
+      "file": "mirror\\groomerhouse.pl\\polityka-prywatnosci\\index.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/polityka-prywatnosci/r",
+      "error": "404 Not Found: https://groomerhouse.pl/polityka-prywatnosci/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/feed/",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\feed\\index.html",
+      "bytes": 1891,
+      "type": "application/rss+xml; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2F2023%2F07%2F31%2Fjak-zostac-groomerem-w-polsce-kompletny-przewodnik%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2571,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgroomerhouse.pl%2F2023%2F07%2F31%2Fjak-zostac-groomerem-w-polsce-kompletny-przewodnik%2F&#038;format=xml",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\oembed\\1.0\\embed.html",
+      "bytes": 2571,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/css/post-1.css?ver=1786553099",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\css\\post-1.css",
+      "bytes": 574,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/wp/v2/posts/1",
+      "file": "mirror\\groomerhouse.pl\\wp-json\\wp\\v2\\posts\\1.html",
+      "bytes": 41579,
+      "type": "application/json; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#content",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#kim-jest-groomer",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#predyspozycje",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#jak-zostac",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#koszty",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#zarobki",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#groomer-house",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#faq",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#https://groomerhouse.pl/kurs-groomerski/",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#${entry.target.id}",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#comment-1",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-login.php?redirect_to=https%3A%2F%2Fgroomerhouse.pl%2F2023%2F07%2F31%2Fjak-zostac-groomerem-w-polsce-kompletny-przewodnik%2F",
+      "file": "mirror\\groomerhouse.pl\\wp-login.php",
+      "bytes": 17986,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/#respond",
+      "file": "mirror\\groomerhouse.pl\\2023\\07\\31\\jak-zostac-groomerem-w-polsce-kompletny-przewodnik\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/comment-reply.min.js?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\comment-reply.min.js",
+      "bytes": 3026,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/r",
+      "error": "404 Not Found: https://groomerhouse.pl/2023/07/31/jak-zostac-groomerem-w-polsce-kompletny-przewodnik/r"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-groomingu-kotow-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-groomingu-kotow-150x150.jpg",
+      "bytes": 9435,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/07/kurs-grooming-psow-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\07\\kurs-grooming-psow-150x150.jpg",
+      "bytes": 10767,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/elementor/screenshots/Elementor-post-screenshot_564_2026-07-18-17-53-16_7f2ded8.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\elementor\\screenshots\\Elementor-post-screenshot_564_2026-07-18-17-53-16_7f2ded8.png",
+      "bytes": 115873,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/46.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\46.png",
+      "bytes": 287942,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/46-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\46-300x300.png",
+      "bytes": 53535,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/46-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\46-1024x1024.png",
+      "bytes": 421355,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/46-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\46-150x150.png",
+      "bytes": 17424,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/46-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\46-768x768.png",
+      "bytes": 257026,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-Image.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-Image.png",
+      "bytes": 413767,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-Image-300x169.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-Image-300x169.png",
+      "bytes": 36011,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-Image-1024x576.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-Image-1024x576.png",
+      "bytes": 343942,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-Image-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-Image-150x150.png",
+      "bytes": 17595,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-Image-768x432.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-Image-768x432.png",
+      "bytes": 201408,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Ad-Time-For-Vacation.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Ad-Time-For-Vacation.png",
+      "bytes": 711442,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Ad-Time-For-Vacation-300x49.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Ad-Time-For-Vacation-300x49.png",
+      "bytes": 32843,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Ad-Time-For-Vacation-1024x168.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Ad-Time-For-Vacation-1024x168.png",
+      "bytes": 336096,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Ad-Time-For-Vacation-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Ad-Time-For-Vacation-150x150.png",
+      "bytes": 38700,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Ad-Time-For-Vacation-768x126.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Ad-Time-For-Vacation-768x126.png",
+      "bytes": 194268,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Flex-Ad-Side-Bar.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Flex-Ad-Side-Bar.png",
+      "bytes": 244650,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Flex-Ad-Side-Bar-300x259.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Flex-Ad-Side-Bar-300x259.png",
+      "bytes": 126170,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Flex-Ad-Side-Bar-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Flex-Ad-Side-Bar-150x150.png",
+      "bytes": 43616,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Lumint-ad-Side-Bar.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Lumint-ad-Side-Bar.png",
+      "bytes": 330725,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Lumint-ad-Side-Bar-196x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Lumint-ad-Side-Bar-196x300.png",
+      "bytes": 71085,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Lumint-ad-Side-Bar-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Lumint-ad-Side-Bar-150x150.png",
+      "bytes": 30489,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Photography-BG.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Photography-BG.png",
+      "bytes": 243991,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Photography-BG-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Photography-BG-300x300.png",
+      "bytes": 69729,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Photography-BG-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Photography-BG-150x150.png",
+      "bytes": 19901,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Home-Bg.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Home-Bg.png",
+      "bytes": 413690,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Home-Bg-300x213.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Home-Bg-300x213.png",
+      "bytes": 50202,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Home-Bg-1024x726.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Home-Bg-1024x726.png",
+      "bytes": 468443,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Home-Bg-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Home-Bg-150x150.png",
+      "bytes": 20315,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Home-Bg-768x545.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Home-Bg-768x545.png",
+      "bytes": 270711,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-About-Pic.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-About-Pic.png",
+      "bytes": 425968,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-About-Pic-300x169.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-About-Pic-300x169.png",
+      "bytes": 28658,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-About-Pic-1024x576.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-About-Pic-1024x576.png",
+      "bytes": 234325,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-About-Pic-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-About-Pic-150x150.png",
+      "bytes": 19181,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/Video-About-Pic-768x432.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\Video-About-Pic-768x432.png",
+      "bytes": 140921,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/icon-About.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\icon-About.svg",
+      "bytes": 338,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG.png",
+      "bytes": 10381,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG-300x109.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG-300x109.png",
+      "bytes": 1861,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG-1024x373.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG-1024x373.png",
+      "bytes": 5947,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG-150x150.png",
+      "bytes": 280,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG-768x280.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG-768x280.png",
+      "bytes": 4561,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2026/06/About-BG-1536x560.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2026\\06\\About-BG-1536x560.png",
+      "bytes": 9265,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/11/Zrzut-ekranu-2025-11-1-o-18.18.00-150x150.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\11\\Zrzut-ekranu-2025-11-1-o-18.18.00-150x150.jpeg",
+      "bytes": 8488,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/cropped-pet-hand-drawn-icons-HZ8W3A-1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\cropped-pet-hand-drawn-icons-HZ8W3A-1.png",
+      "bytes": 386,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1.png",
+      "bytes": 775979,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1-300x169.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1-300x169.png",
+      "bytes": 39579,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1-1024x576.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1-1024x576.png",
+      "bytes": 320720,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1-150x150.png",
+      "bytes": 20346,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1-768x432.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1-768x432.png",
+      "bytes": 193243,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1-1536x864.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1-1536x864.png",
+      "bytes": 692563,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu.png",
+      "bytes": 1111702,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu-300x169.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu-300x169.png",
+      "bytes": 44129,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu-1024x576.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu-1024x576.png",
+      "bytes": 393594,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu-150x150.png",
+      "bytes": 21236,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu-768x432.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu-768x432.png",
+      "bytes": 232295,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/groomer-house-baner-shih-tzu-1536x864.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\groomer-house-baner-shih-tzu-1536x864.png",
+      "bytes": 851946,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house.png",
+      "bytes": 580222,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-300x169.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-300x169.png",
+      "bytes": 27309,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1024x576.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1024x576.png",
+      "bytes": 209857,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-150x150.png",
+      "bytes": 13305,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-768x432.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-768x432.png",
+      "bytes": 128605,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/baner-groomer-house-1536x864.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\baner-groomer-house-1536x864.png",
+      "bytes": 421041,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1.jpg",
+      "bytes": 461231,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1-300x169.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1-300x169.jpg",
+      "bytes": 20393,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1-1024x576.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1-1024x576.jpg",
+      "bytes": 181159,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1-150x150.jpg",
+      "bytes": 9348,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1-768x432.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1-768x432.jpg",
+      "bytes": 108887,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/head1-1536x864.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\head1-1536x864.jpg",
+      "bytes": 371566,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-scaled.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-scaled.jpg",
+      "bytes": 253679,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-225x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-225x300.jpg",
+      "bytes": 13322,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-768x1024.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-768x1024.jpg",
+      "bytes": 69357,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-150x150.jpg",
+      "bytes": 6733,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-1152x1536.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-1152x1536.jpg",
+      "bytes": 122179,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/IMG_4382-1536x2048.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\IMG_4382-1536x2048.jpg",
+      "bytes": 183613,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/qr2.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\qr2.jpg",
+      "bytes": 44771,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/qr2-300x203.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\qr2-300x203.jpg",
+      "bytes": 4129,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/qr2-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\qr2-150x150.jpg",
+      "bytes": 2254,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/BOOKSY-2-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\BOOKSY-2-300x300.png",
+      "bytes": 7252,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/BOOKSY-2-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\BOOKSY-2-1024x1024.png",
+      "bytes": 56669,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/BOOKSY-2-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\BOOKSY-2-150x150.png",
+      "bytes": 3917,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/BOOKSY-2-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\BOOKSY-2-768x768.png",
+      "bytes": 27023,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/strona-glowna-groomer-house.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\strona-glowna-groomer-house.png",
+      "bytes": 938251,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/strona-glowna-groomer-house-300x300.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\strona-glowna-groomer-house-300x300.png",
+      "bytes": 45089,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/strona-glowna-groomer-house-1024x1024.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\strona-glowna-groomer-house-1024x1024.png",
+      "bytes": 365195,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/strona-glowna-groomer-house-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\strona-glowna-groomer-house-150x150.png",
+      "bytes": 14182,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/strona-glowna-groomer-house-768x768.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\strona-glowna-groomer-house-768x768.png",
+      "bytes": 221081,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Instagram_Fill.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Instagram_Fill.svg",
+      "bytes": 1189,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/logo.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\logo.svg",
+      "bytes": 3526,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1.jpg",
+      "bytes": 4528,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1-300x96.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1-300x96.jpg",
+      "bytes": 530,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1-1024x326.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1-1024x326.jpg",
+      "bytes": 2573,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1-150x150.jpg",
+      "bytes": 577,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1-768x245.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1-768x245.jpg",
+      "bytes": 1662,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-horizontal-1-1536x490.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-horizontal-1-1536x490.jpg",
+      "bytes": 5205,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_3-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_3-13122021-1.svg",
+      "bytes": 2622,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_4-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_4-13122021-1.svg",
+      "bytes": 4931,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_1-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_1-13122021-1.svg",
+      "bytes": 7812,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_2-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_2-13122021-1.svg",
+      "bytes": 3047,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_5-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_5-13122021-1.svg",
+      "bytes": 6182,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Partners-Logo_6-13122021-1.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Partners-Logo_6-13122021-1.svg",
+      "bytes": 3476,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Team.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Team.jpg",
+      "bytes": 9839,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Team-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Team-300x300.jpg",
+      "bytes": 2003,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Team-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Team-150x150.jpg",
+      "bytes": 791,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image_Placeholder-about.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image_Placeholder-about.jpeg",
+      "bytes": 2643,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image_Placeholder-about-300x264.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image_Placeholder-about-300x264.jpeg",
+      "bytes": 1027,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image_Placeholder-about-150x150.jpeg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image_Placeholder-about-150x150.jpeg",
+      "bytes": 581,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-Contact-1.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-Contact-1.jpg",
+      "bytes": 5000,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-Contact-1-300x151.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-Contact-1-300x151.jpg",
+      "bytes": 1021,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-Contact-1-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-Contact-1-150x150.jpg",
+      "bytes": 755,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2025/10/Image-Contact-1-768x387.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2025\\10\\Image-Contact-1-768x387.jpg",
+      "bytes": 4457,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer-kopia-2.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer-kopia-2.jpg",
+      "bytes": 187796,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer-kopia-2-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer-kopia-2-300x300.jpg",
+      "bytes": 41145,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer-kopia-2-1024x1024.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer-kopia-2-1024x1024.jpg",
+      "bytes": 168758,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer-kopia-2-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer-kopia-2-150x150.jpg",
+      "bytes": 24266,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer-kopia-2-768x769.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer-kopia-2-768x769.jpg",
+      "bytes": 116005,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer11.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer11.jpg",
+      "bytes": 182761,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer11-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer11-300x300.jpg",
+      "bytes": 40952,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer11-1024x1024.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer11-1024x1024.jpg",
+      "bytes": 166045,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer11-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer11-150x150.jpg",
+      "bytes": 24034,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/karuzelka_groomer11-768x768.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\karuzelka_groomer11-768x768.jpg",
+      "bytes": 116202,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/zdjecietlo_fb-e1692051389716.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\zdjecietlo_fb-e1692051389716.jpg",
+      "bytes": 134802,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/zdjecietlo_fb-e1692051389716-300x151.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\zdjecietlo_fb-e1692051389716-300x151.jpg",
+      "bytes": 25390,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/zdjecietlo_fb-e1692051389716-1024x515.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\zdjecietlo_fb-e1692051389716-1024x515.jpg",
+      "bytes": 101214,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/zdjecietlo_fb-e1692051389716-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\zdjecietlo_fb-e1692051389716-150x150.jpg",
+      "bytes": 19459,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/zdjecietlo_fb-e1692051389716-768x386.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\zdjecietlo_fb-e1692051389716-768x386.jpg",
+      "bytes": 68934,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/logo-1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\logo-1.png",
+      "bytes": 4585,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/logo-1-150x46.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\logo-1-150x46.png",
+      "bytes": 4169,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2.jpg",
+      "bytes": 94386,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-300x178.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-300x178.jpg",
+      "bytes": 6810,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-1024x607.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-1024x607.jpg",
+      "bytes": 49595,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-150x150.jpg",
+      "bytes": 3214,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-768x455.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-768x455.jpg",
+      "bytes": 30883,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-1536x910.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7_2-1536x910.jpg",
+      "bytes": 96020,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ.jpg",
+      "bytes": 22675,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ-300x268.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ-300x268.jpg",
+      "bytes": 12279,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-cheerful-european-guy-with-thick-bristle-6CHT7KZ-150x150.jpg",
+      "bytes": 4903,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG.jpg",
+      "bytes": 31664,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG-300x268.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG-300x268.jpg",
+      "bytes": 16021,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\portrait-of-good-looking-curly-haired-woman-keeps-ZDL9EAG-150x150.jpg",
+      "bytes": 6347,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4.png",
+      "bytes": 6328,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4-300x251.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4-300x251.png",
+      "bytes": 6487,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4-150x150.png",
+      "bytes": 2681,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F.jpg",
+      "bytes": 20223,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F-300x266.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F-300x266.jpg",
+      "bytes": 10454,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\handsome-grey-haired-male-pensioner-has-surprised-KP5KL4F-150x150.jpg",
+      "bytes": 4086,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4_outline.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4_outline.png",
+      "bytes": 10665,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4_outline-300x268.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4_outline-300x268.png",
+      "bytes": 11392,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_4_outline-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_4_outline-150x150.png",
+      "bytes": 4289,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/beautiful-woman-with-dog-7C9AR9Y.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\beautiful-woman-with-dog-7C9AR9Y.jpg",
+      "bytes": 96307,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/beautiful-woman-with-dog-7C9AR9Y-231x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\beautiful-woman-with-dog-7C9AR9Y-231x300.jpg",
+      "bytes": 14485,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/beautiful-woman-with-dog-7C9AR9Y-790x1024.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\beautiful-woman-with-dog-7C9AR9Y-790x1024.jpg",
+      "bytes": 108575,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/beautiful-woman-with-dog-7C9AR9Y-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\beautiful-woman-with-dog-7C9AR9Y-150x150.jpg",
+      "bytes": 6822,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/beautiful-woman-with-dog-7C9AR9Y-768x996.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\beautiful-woman-with-dog-7C9AR9Y-768x996.jpg",
+      "bytes": 103831,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8.jpg",
+      "bytes": 38404,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8-300x300.jpg",
+      "bytes": 18052,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\washing-the-spitz-in-the-bathroom-animal-care-SVK2LN8-150x150.jpg",
+      "bytes": 6176,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-taking-bath-at-home-QFCFUE2.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-taking-bath-at-home-QFCFUE2.jpg",
+      "bytes": 36001,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-taking-bath-at-home-QFCFUE2-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-taking-bath-at-home-QFCFUE2-300x300.jpg",
+      "bytes": 19540,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-taking-bath-at-home-QFCFUE2-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-taking-bath-at-home-QFCFUE2-150x150.jpg",
+      "bytes": 6921,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-14.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-14.png",
+      "bytes": 1526,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-13.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-13.png",
+      "bytes": 1704,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/optimistic-positive-handsome-bearded-man-FXXXGY4.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\optimistic-positive-handsome-bearded-man-FXXXGY4.jpg",
+      "bytes": 3990,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/motivated-cheerful-and-glad-pleasant-caucasian-adu-M6NJPEF.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\motivated-cheerful-and-glad-pleasant-caucasian-adu-M6NJPEF.jpg",
+      "bytes": 4426,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/education-women-and-lifestyle-concept-attractive-a-VY6PRCD.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\education-women-and-lifestyle-concept-attractive-a-VY6PRCD.jpg",
+      "bytes": 4646,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3.png",
+      "bytes": 9672,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3-300x251.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3-300x251.png",
+      "bytes": 6462,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3-150x150.png",
+      "bytes": 2660,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/charming-happy-woman-of-afro-appearance-expresses-WNYL34E.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\charming-happy-woman-of-afro-appearance-expresses-WNYL34E.jpg",
+      "bytes": 41499,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/charming-happy-woman-of-afro-appearance-expresses-WNYL34E-300x263.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\charming-happy-woman-of-afro-appearance-expresses-WNYL34E-300x263.jpg",
+      "bytes": 18892,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/charming-happy-woman-of-afro-appearance-expresses-WNYL34E-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\charming-happy-woman-of-afro-appearance-expresses-WNYL34E-150x150.jpg",
+      "bytes": 7090,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3_outline.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3_outline.png",
+      "bytes": 16215,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3_outline-300x265.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3_outline-300x265.png",
+      "bytes": 10622,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_3_outline-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_3_outline-150x150.png",
+      "bytes": 3828,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/small-scottish-kitten-and-a-bright-ball-SPKR78B.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\small-scottish-kitten-and-a-bright-ball-SPKR78B.jpg",
+      "bytes": 33413,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/small-scottish-kitten-and-a-bright-ball-SPKR78B-300x281.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\small-scottish-kitten-and-a-bright-ball-SPKR78B-300x281.jpg",
+      "bytes": 19605,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/small-scottish-kitten-and-a-bright-ball-SPKR78B-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\small-scottish-kitten-and-a-bright-ball-SPKR78B-150x150.jpg",
+      "bytes": 6867,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-covered-in-blanket-MX9ET47.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-covered-in-blanket-MX9ET47.jpg",
+      "bytes": 26988,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-covered-in-blanket-MX9ET47-300x281.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-covered-in-blanket-MX9ET47-300x281.jpg",
+      "bytes": 16763,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/dog-covered-in-blanket-MX9ET47-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\dog-covered-in-blanket-MX9ET47-150x150.jpg",
+      "bytes": 5791,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-11.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-11.png",
+      "bytes": 678,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-10.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-10.png",
+      "bytes": 727,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_2.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_2.png",
+      "bytes": 5408,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_2-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_2-150x150.png",
+      "bytes": 2259,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7.jpg",
+      "bytes": 25670,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\funny-french-bulldog-with-a-bottle-ass-pasta-glass-YFWRBJ7-150x150.jpg",
+      "bytes": 5960,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_2_outline.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_2_outline.png",
+      "bytes": 8542,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_2_outline-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_2_outline-150x150.png",
+      "bytes": 4052,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT.jpg",
+      "bytes": 69055,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT-300x163.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT-300x163.jpg",
+      "bytes": 5986,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT-1024x555.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT-1024x555.jpg",
+      "bytes": 37171,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT-150x150.jpg",
+      "bytes": 3379,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT-768x416.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT-768x416.jpg",
+      "bytes": 23498,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/kittens-ragdoll-playing-with-toys-6N5D4DT-1536x832.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\kittens-ragdoll-playing-with-toys-6N5D4DT-1536x832.jpg",
+      "bytes": 71304,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-9.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-9.png",
+      "bytes": 1346,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-8.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-8.png",
+      "bytes": 1461,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_8.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_8.png",
+      "bytes": 533,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_7.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_7.png",
+      "bytes": 658,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_1.png",
+      "bytes": 23288,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_1-300x289.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_1-300x289.png",
+      "bytes": 10183,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/mask_1-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\mask_1-150x150.png",
+      "bytes": 4063,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV.jpg",
+      "bytes": 51724,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV-300x289.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV-300x289.jpg",
+      "bytes": 20142,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\cute-happy-golden-retriever-in-headphones-and-red-CWTTQNV-150x150.jpg",
+      "bytes": 7403,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-6.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-6.png",
+      "bytes": 1353,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-7.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-7.png",
+      "bytes": 1589,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-5.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-5.png",
+      "bytes": 1136,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-4.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-4.png",
+      "bytes": 1620,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-3.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-3.png",
+      "bytes": 1583,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/bg_border.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\bg_border.jpg",
+      "bytes": 1127,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-1.png",
+      "bytes": 1018,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/pet-hand-drawn-icons-HZ8W3A-2.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\pet-hand-drawn-icons-HZ8W3A-2.png",
+      "bytes": 1488,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/white-golden-retriever-posing-in-studio-with-stree-6BSV34B.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\white-golden-retriever-posing-in-studio-with-stree-6BSV34B.jpg",
+      "bytes": 61419,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/white-golden-retriever-posing-in-studio-with-stree-6BSV34B-274x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\white-golden-retriever-posing-in-studio-with-stree-6BSV34B-274x300.jpg",
+      "bytes": 18667,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/white-golden-retriever-posing-in-studio-with-stree-6BSV34B-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\white-golden-retriever-posing-in-studio-with-stree-6BSV34B-150x150.jpg",
+      "bytes": 6678,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_6.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_6.png",
+      "bytes": 2226,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_6-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_6-150x150.png",
+      "bytes": 7357,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_4.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_4.png",
+      "bytes": 3399,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_4-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_4-150x150.png",
+      "bytes": 9287,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_3.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_3.png",
+      "bytes": 1945,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_3-150x97.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_3-150x97.png",
+      "bytes": 1776,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/placeholder.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\placeholder.png",
+      "bytes": 6146,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/placeholder-300x200.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\placeholder-300x200.png",
+      "bytes": 2008,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/placeholder-1024x683.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\placeholder-1024x683.png",
+      "bytes": 7510,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/placeholder-150x150.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\placeholder-150x150.png",
+      "bytes": 1207,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/placeholder-768x512.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\placeholder-768x512.png",
+      "bytes": 5345,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/08/particles_1.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\08\\particles_1.png",
+      "bytes": 1326,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/logo_fb.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\logo_fb.jpg",
+      "bytes": 122364,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/logo_fb-300x300.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\logo_fb-300x300.jpg",
+      "bytes": 33049,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/logo_fb-150x150.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\logo_fb-150x150.jpg",
+      "bytes": 21554,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/uploads/2023/07/logo_fb-768x768.jpg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\uploads\\2023\\07\\logo_fb-768x768.jpg",
+      "bytes": 80784,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-json/oembed/1.0/t.value",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-json/oembed/1.0/t.value"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/images/flags.webp",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\images\\flags.webp",
+      "bytes": 38636,
+      "type": "image/webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/images/flags-2x.webp",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\images\\flags-2x.webp",
+      "bytes": 88662,
+      "type": "image/webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/images/globe.webp",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\images\\globe.webp",
+      "bytes": 514,
+      "type": "image/webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/images/globe-2x.webp",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\images\\globe-2x.webp",
+      "bytes": 1380,
+      "type": "image/webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/icons/check-white.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\icons\\check-white.svg",
+      "bytes": 1421,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/icons/warning.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\icons\\warning.svg",
+      "bytes": 1285,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/images/bottom_dashed.png",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\images\\bottom_dashed.png",
+      "bytes": 1761,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/icons/success.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\icons\\success.svg",
+      "bytes": 1562,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/icons/arrow-down-xs.svg",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\icons\\arrow-down-xs.svg",
+      "bytes": 1275,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/img/flags.webp",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/img/flags.webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/img/flags@2x.webp",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/img/flags@2x.webp"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.44.0",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.eot",
+      "bytes": 231564,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.44.0#iefix",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.eot",
+      "bytes": 231564,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.44.0",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.woff2",
+      "bytes": 103532,
+      "type": "font/woff2"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.44.0",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.woff",
+      "bytes": 127192,
+      "type": "font/woff"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.44.0",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.ttf",
+      "bytes": 231404,
+      "type": "font/ttf"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.44.0#eicon",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\eicons\\fonts\\eicons.svg",
+      "bytes": 354110,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "bytes": 203030,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "bytes": 203030,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "bytes": 78196,
+      "type": "font/woff2"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "bytes": 101652,
+      "type": "font/woff"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "bytes": 202744,
+      "type": "font/ttf"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "bytes": 918991,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "bytes": 151556,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot?#iefix",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "bytes": 151556,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "bytes": 81612,
+      "type": "font/woff2"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "bytes": 97804,
+      "type": "font/woff"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "bytes": 151368,
+      "type": "font/ttf"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\elementor\\assets\\lib\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "bytes": 749223,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/cennik-uslug#content",
+      "file": "mirror\\groomerhouse.pl\\cennik-uslug.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/kurs-groomerski#content",
+      "file": "mirror\\groomerhouse.pl\\kurs-groomerski.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/booknetic/app/Frontend/assets/js/intlTelInput.min.js?v=1.3.3&#${t}",
+      "file": "mirror\\groomerhouse.pl\\wp-content\\plugins\\booknetic\\app\\Frontend\\assets\\js\\intlTelInput.min.js",
+      "bytes": 309789,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/$%7Be.src%7D",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/$%7Be.src%7D"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/e",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-content/plugins/elementor/assets/js/e"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/js/window.location.href",
+      "error": "404 Not Found: https://groomerhouse.pl/wp-content/plugins/elementor-pro/assets/js/window.location.href"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=690#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 124260,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=223#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 188832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/polityka-prywatnosci#content",
+      "file": "mirror\\groomerhouse.pl\\polityka-prywatnosci.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=542#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 128715,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=146#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 87172,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=477#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 56167,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#content",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#kim-jest-groomer",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#predyspozycje",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#jak-zostac",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#koszty",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#zarobki",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#groomer-house",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#faq",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#https://groomerhouse.pl/kurs-groomerski/",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/?p=1#${entry.target.id}",
+      "file": "mirror\\groomerhouse.pl\\index.html",
+      "bytes": 89156,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/css/dashicons.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\css\\dashicons.min.css",
+      "bytes": 59004,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/css/buttons.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\css\\buttons.min.css",
+      "bytes": 8152,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/css/forms.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\css\\forms.min.css",
+      "bytes": 30917,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/css/l10n.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\css\\l10n.min.css",
+      "bytes": 3200,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/css/dist/base-styles/admin-schemes.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\css\\dist\\base-styles\\admin-schemes.min.css",
+      "bytes": 3656,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/css/login.min.css?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\css\\login.min.css",
+      "bytes": 6639,
+      "type": "text/css"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-login.php?action=lostpassword",
+      "file": "mirror\\groomerhouse.pl\\wp-login.php",
+      "bytes": 12138,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/clipboard.min.js?ver=2.0.11",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\clipboard.min.js",
+      "bytes": 9009,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/zxcvbn-async.min.js?ver=1.0",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\zxcvbn-async.min.js",
+      "bytes": 351,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/js/password-strength-meter.min.js?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\js\\password-strength-meter.min.js",
+      "bytes": 1123,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/underscore.min.js?ver=1.13.8",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\underscore.min.js",
+      "bytes": 19012,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/wp-util.min.js?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\wp-util.min.js",
+      "bytes": 1431,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/dist/dom-ready.min.js?ver=a06281ae5cf5500e9317",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\dist\\dom-ready.min.js",
+      "bytes": 818,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\js\\dist\\a11y.min.js",
+      "bytes": 2503,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/js/user-profile.min.js?ver=7.0.4",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\js\\user-profile.min.js",
+      "bytes": 7997,
+      "type": "application/javascript"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\fonts\\dashicons.eot",
+      "bytes": 56564,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800#iefix",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\fonts\\dashicons.eot",
+      "bytes": 56564,
+      "type": "application/vnd.ms-fontobject"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-includes/fonts/dashicons.ttf?99ac726223c749443b642ce33df8b800",
+      "file": "mirror\\groomerhouse.pl\\wp-includes\\fonts\\dashicons.ttf",
+      "bytes": 56392,
+      "type": "font/ttf"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/images/loading.gif",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\images\\loading.gif",
+      "bytes": 1368,
+      "type": "image/gif"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/images/w-logo-gray.png?ver=20260303",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\images\\w-logo-gray.png",
+      "bytes": 4497,
+      "type": "image/png"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-admin/images/wordpress-logo-gray.svg?ver=20260303",
+      "file": "mirror\\groomerhouse.pl\\wp-admin\\images\\wordpress-logo-gray.svg",
+      "bytes": 1521,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://groomerhouse.pl/wp-login.php",
+      "file": "mirror\\groomerhouse.pl\\wp-login.php",
+      "bytes": 17784,
+      "type": "text/html; charset=UTF-8"
+    }
+  ]
+}

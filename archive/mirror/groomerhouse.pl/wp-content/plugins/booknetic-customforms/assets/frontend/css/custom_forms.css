@@ -1,0 +1,26 @@
+.custom-form-link {
+    font-size: 14px !important;
+    text-align: left !important;
+    color: #2d92ff !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.custom-form-link:hover {
+    color: #0061ca !important;
+}
+
+.select2-container--bootstrap.select2-container--open{
+    z-index: 9999999 !important;
+}
+
+.booknetic_appointment .booknetic_custom_form input[type="checkbox"]:checked
+{
+    background: #53D56C !important;
+    border-color: #53D56C !important;
+}
+
+/* Pass calendar icon taps through to the input so flatpickr opens. */
+.booknetic_custom_form .bkntc-date-wrapper .icon {
+    pointer-events: none;
+}
