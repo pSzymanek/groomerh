@@ -6,12 +6,13 @@
   "scripts": {
     "extract:wordpress": "node tools/extract-wordpress.mjs",
     "prepare:assets": "node tools/prepare-assets.mjs",
+    "export:wordpress": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/export-wordpress.ps1",
     "dev": "npm run prepare:assets && astro dev --host 127.0.0.1",
     "build": "npm run prepare:assets && astro check && astro build",
     "preview": "node dist/server/entry.mjs"
   },
   "dependencies": {
-    "@astrojs/node": "^10.1.4",
+    "@astrojs/vercel": "^10.0.8",
     "astro": "^6.3.0"
   },
   "devDependencies": {

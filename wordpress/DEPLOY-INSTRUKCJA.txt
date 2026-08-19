@@ -1,0 +1,26 @@
+GROOMER HOUSE — WDROŻENIE PRZEZ SFTP
+====================================
+
+1. Zrób kopię plików i bazy obecnego WordPressa.
+2. Rozpakuj paczkę lokalnie.
+3. Przez SFTP skopiuj zawartość folderu wp-content do folderu wp-content na serwerze.
+   Nie usuwaj innych motywów ani wtyczek.
+4. W panelu WordPress przejdź do Wygląd -> Motywy i aktywuj „Groomer House Snapshot”.
+5. Upewnij się, że Booknetic jest aktywny. Most w mu-plugins automatycznie utworzy stronę /rezerwacja/.
+6. W Ustawienia -> Bezpośrednie odnośniki kliknij „Zapisz zmiany”, bez zmiany ustawień.
+7. Sprawdź: /, /kurs-groomerski/, /cennik/, /blog/, artykuł oraz /rezerwacja/.
+8. Dodaj testowy szkic wpisu w zakładce Wpisy. Po publikacji nowy artykuł automatycznie
+   otrzyma wygląd bloga; nie trzeba budować ani ponownie wgrywać paczki.
+
+COFNIĘCIE ZMIANY
+================
+
+Jeżeli cokolwiek będzie nie tak, w panelu WordPress aktywuj poprzedni motyw.
+Pliki starej strony nie są usuwane ani nadpisywane przez tę paczkę.
+
+WAŻNE
+=====
+
+- Nie wgrywaj paczki bez wcześniejszej kopii bazy i wp-content.
+- Nie przesyłaj hasła SFTP w wiadomościach.
+- Konfiguracja usług, godzin, personelu i płatności pozostaje w panelu Booknetic.
