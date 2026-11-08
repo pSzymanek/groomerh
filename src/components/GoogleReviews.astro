@@ -65,24 +65,75 @@ const stars = Array.from({ length: 5 });
     const track = root.querySelector<HTMLElement>("[data-reviews-track]")!;
     const slides = [...root.querySelectorAll<HTMLElement>("[data-reviews-slide]")];
     const dots = [...root.querySelectorAll<HTMLButtonElement>("[data-reviews-dot]")];
+    const total = slides.length;
+    const autoplayMs = 6000;
     let current = 0;
+    let busy = false;
 
-    const go = (index: number) => {
-      current = (index + slides.length) % slides.length;
-      track.style.transform = `translateX(-${current * 100}%)`;
+    // Clone of the first set at the end, so autoplay always slides left and loops seamlessly.
+    const clone = slides[0].cloneNode(true) as HTMLElement;
+    clone.setAttribute("aria-hidden", "true");
+    clone.setAttribute("inert", "");
+    clone.removeAttribute("data-reviews-slide");
+    track.append(clone);
+
+    const place = (pos: number, animate: boolean) => {
+      if (!animate) track.style.transition = "none";
+      track.style.transform = `translateX(-${pos * 100}%)`;
+      if (!animate) { void track.offsetWidth; track.style.transition = ""; }
+    };
+    const mark = () => {
       slides.forEach((slide, i) => slide.toggleAttribute("inert", i !== current));
       dots.forEach((dot, i) => dot.toggleAttribute("aria-current", i === current));
     };
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    root.querySelector("[data-reviews-prev]")?.addEventListener("click", () => go(current - 1));
-    root.querySelector("[data-reviews-next]")?.addEventListener("click", () => go(current + 1));
-    dots.forEach((dot, i) => dot.addEventListener("click", () => go(i)));
+    const go = (index: number) => {
+      if (busy) return;
+      const target = (index + total) % total;
+      if (index >= total && !reduceMotion) {
+        // Forward past the last set: slide left onto the clone, then snap back to the first set.
+        busy = true;
+        place(total, true);
+        const finish = () => { if (!busy) return; place(0, false); busy = false; };
+        track.addEventListener("transitionend", finish, { once: true });
+        window.setTimeout(finish, 700); // fallback if transitionend never fires (e.g. background tab)
+      } else if (index < 0 && !reduceMotion) {
+        // Backward from the first set: jump to the clone, then slide right to the last set.
+        place(total, false);
+        place(target, true);
+      } else {
+        place(target, !reduceMotion);
+      }
+      current = target;
+      mark();
+    };
+
+    let timer: number | undefined;
+    let paused = false;
+    let visible = false;
+    const stop = () => { window.clearInterval(timer); timer = undefined; };
+    const start = () => {
+      stop();
+      if (reduceMotion || paused || !visible || document.hidden || root.querySelector(".google-review.is-open")) return;
+      timer = window.setInterval(() => go(current + 1), autoplayMs);
+    };
+    root.addEventListener("mouseenter", () => { paused = true; stop(); });
+    root.addEventListener("mouseleave", () => { paused = false; start(); });
+    root.addEventListener("focusin", () => { paused = true; stop(); });
+    root.addEventListener("focusout", (event) => { if (!root.contains(event.relatedTarget as Node | null)) { paused = false; start(); } });
+    document.addEventListener("visibilitychange", start);
+    new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; start(); }, { threshold: 0.3 }).observe(root);
+
+    root.querySelector("[data-reviews-prev]")?.addEventListener("click", () => { go(current - 1); start(); });
+    root.querySelector("[data-reviews-next]")?.addEventListener("click", () => { go(current + 1); start(); });
+    dots.forEach((dot, i) => dot.addEventListener("click", () => { go(i); start(); }));
 
     let startX = 0;
     track.addEventListener("touchstart", (event) => { startX = event.touches[0].clientX; }, { passive: true });
     track.addEventListener("touchend", (event) => {
       const delta = event.changedTouches[0].clientX - startX;
-      if (Math.abs(delta) > 45) go(current + (delta < 0 ? 1 : -1));
+      if (Math.abs(delta) > 45) { go(current + (delta < 0 ? 1 : -1)); start(); }
     });
 
     const updateMoreButtons = () => {
@@ -98,9 +149,10 @@ const stars = Array.from({ length: 5 });
       const open = card.classList.toggle("is-open");
       button.textContent = open ? "Zwiń" : "Czytaj więcej";
       button.setAttribute("aria-expanded", String(open));
+      start();
     }));
 
-    go(0);
+    mark();
     updateMoreButtons();
     window.addEventListener("resize", updateMoreButtons);
   }
