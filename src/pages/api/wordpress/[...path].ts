@@ -8,10 +8,18 @@ export const GET: APIRoute = async ({ params, request }) => {
     return new Response(JSON.stringify({ error: "Endpoint niedostępny" }), { status: 404 });
   }
 
-  const wordpress = (process.env.WORDPRESS_URL || "https://groomerhouse.pl").replace(/\/$/, "");
+  const wordpress = process.env.WORDPRESS_URL?.replace(/\/$/, "");
+  if (!wordpress) {
+    return new Response(JSON.stringify({ error: "WordPress nie jest jeszcze skonfigurowany" }), { status: 503, headers: { "content-type": "application/json; charset=utf-8" } });
+  }
   const url = new URL(`${wordpress}/wp-json/${requestedPath}`);
   url.search = new URL(request.url).search;
-  const response = await fetch(url, { headers: { accept: "application/json" } });
+  let response: Response;
+  try {
+    response = await fetch(url, { headers: { accept: "application/json" }, signal: AbortSignal.timeout(5000) });
+  } catch {
+    return new Response(JSON.stringify({ error: "WordPress chwilowo niedostępny" }), { status: 503, headers: { "content-type": "application/json; charset=utf-8" } });
+  }
   return new Response(response.body, {
     status: response.status,
     headers: {

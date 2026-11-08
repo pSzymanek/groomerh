@@ -2,8 +2,9 @@ import { defineConfig } from "astro/config";
 import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  site: "https://groomerhouse.pl",
+  site: "https://groomerh.vercel.app",
   output: "server",
+  compressHTML: true,
   adapter: vercel({
     includeFiles: ["./archive"],
   }),

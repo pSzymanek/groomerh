@@ -1,0 +1,177 @@
+---
+import "../styles/global.css";
+import Icon from "./Icon.astro";
+import CookieConsent from "./CookieConsent.astro";
+import { canonicalUrl, preservedMetadata, normalizedSeoTitle, absoluteImageUrl, DEFAULT_SOCIAL_IMAGE, DEFAULT_IMAGE_ALT, structuredPageData, serializeJsonLd, wordpressUtcDate, type BreadcrumbItem, type SeoArticle } from "../lib/seo";
+
+interface Props {
+  title?: string; description?: string; path?: string; noindex?: boolean; type?: string;
+  image?: string; imageAlt?: string; breadcrumbs?: BreadcrumbItem[]; article?: SeoArticle; modifiedGmt?: string;
+}
+const { title = "Groomer House | Salon i kursy groomerskie w Bytomiu", description = "Groomer House w Bytomiu — profesjonalna pielęgnacja psów i kotów oraz praktyczne kursy groomerskie na Śląsku.", path = "/", noindex = false, type = "website", image, imageAlt, breadcrumbs, article, modifiedGmt } = Astro.props;
+const canonical = canonicalUrl(path);
+// WEBD's reverse proxy can expose its internal host in Astro.url for SSR routes.
+// Indexing is a deployment setting, not a decision based on that host.
+const indexable = !noindex && process.env.SEO_NOINDEX !== "true";
+const pageTitle = preservedMetadata[path]?.title || normalizedSeoTitle(title);
+const pageDescription = preservedMetadata[path]?.description || description;
+const socialImage = absoluteImageUrl(image) || DEFAULT_SOCIAL_IMAGE;
+const socialImageAlt = imageAlt || (socialImage === DEFAULT_SOCIAL_IMAGE ? DEFAULT_IMAGE_ALT : pageTitle);
+const structuredData = indexable ? structuredPageData({ path, title: pageTitle, description: pageDescription, image: socialImage, imageAlt: socialImageAlt, breadcrumbs, article, modifiedGmt }) : undefined;
+const nav = [
+  { label: "Salon i cennik", href: "/cennik/" },
+  { label: "Kursy", href: "/kurs-groomerski/" },
+  { label: "O mnie", href: "/o-mnie/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Kontakt", href: "/dane-kontaktowe/" },
+];
+const courseNav = [
+  { label: "Kursy groomerskie", href: "/kurs-groomerski/" },
+  { label: "Podstawowy kurs groomerski", href: "/podstawowy-kurs-groomerski-slask/" },
+  { label: "Kurs groomingu kotów", href: "/kurs-grooming-kotow/" },
+  { label: "Sukcesy naszych klientów", href: "/sukcesy-naszych-klientow/" },
+];
+---
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content={pageDescription} />
+    <meta name="robots" content={indexable ? "index,follow" : "noindex,nofollow"} />
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="Groomer House" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    {!noindex && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content={socialImage} />
+    {socialImage.startsWith("https:") && <meta property="og:image:secure_url" content={socialImage} />}
+    <meta property="og:image:alt" content={socialImageAlt} />
+    {socialImage === DEFAULT_SOCIAL_IMAGE && <><meta property="og:image:width" content="1280" /><meta property="og:image:height" content="720" /></>}
+    {article && wordpressUtcDate(article.publishedGmt) && <meta property="article:published_time" content={wordpressUtcDate(article.publishedGmt)} />}
+    {article && wordpressUtcDate(article.modifiedGmt) && <meta property="article:modified_time" content={wordpressUtcDate(article.modifiedGmt)} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
+    {structuredData && <script is:inline type="application/ld+json" set:html={serializeJsonLd(structuredData)} />}
+    <title>{pageTitle}</title>
+    <link rel="icon" href="/wp-content/uploads/2023/08/particles_2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <div class="topline">
+      <div class="container topline-inner">
+        <span>Salon pielęgnacji zwierząt i centrum szkoleniowe · Bytom</span>
+        <a href="tel:+48607252521">Zadzwoń: +48 607 252 521 <Icon name="phone" size={13} /></a>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Groomer House — strona główna">
+          <span class="brand-mark"><Icon name="paw" size={26} /></span>
+          <span class="brand-type"><strong>GROOMER<span>HOUSE</span></strong><small>salon pielęgnacji zwierząt</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Nawigacja główna">
+          {nav.map((item) => item.label === "Kursy" ? <div class="nav-course" data-course-nav>
+            <div class="nav-course-row"><a href={item.href} aria-current={path === item.href ? "page" : undefined}>{item.label}</a><button class="nav-course-toggle" type="button" aria-label="Rozwiń podmenu kursów" aria-expanded="false" aria-controls="desktop-course-menu"><Icon name="chevron" size={16} /></button></div>
+            <div class="nav-course-menu" id="desktop-course-menu" hidden>{courseNav.map(course => <a href={course.href} aria-current={path === course.href ? "page" : undefined}>{course.label}<Icon name="arrow" size={15} /></a>)}</div>
+          </div> : <a href={item.href} aria-current={path === item.href ? "page" : undefined}>{item.label}</a>)}
+        </nav>
+        <div class="header-actions">
+          <a class="button button-small button-dark" href="/rezerwacja/">Rezerwacja <Icon name="arrow" size={15} /></a>
+          <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Menu mobilne" hidden>
+        {nav.map((item) => item.label === "Kursy" ? <div class="nav-course" data-course-nav>
+          <div class="nav-course-row"><a href={item.href}>{item.label}<Icon name="arrow" size={16} /></a><button class="nav-course-toggle" type="button" aria-label="Rozwiń kursy w menu mobilnym" aria-expanded="false" aria-controls="mobile-course-menu"><Icon name="chevron" size={18} /></button></div>
+          <div class="nav-course-menu" id="mobile-course-menu" hidden>{courseNav.map(course => <a href={course.href} aria-current={path === course.href ? "page" : undefined}>{course.label}<Icon name="arrow" size={15} /></a>)}</div>
+        </div> : <a href={item.href}>{item.label}<Icon name="arrow" size={16} /></a>)}
+        <a href="/rezerwacja/">Rezerwacja<Icon name="arrow" size={16} /></a>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-statement">
+          <span class="eyebrow light">Groomer House · Bytom</span>
+          <h2>Groomer House</h2>
+          <p>Kursy Groomerskie i Profesjonalny Groomer. Oferujemy kompleksowe zabiegi pielęgnacyjne dla psów i kotów.</p>
+          <a class="button button-light" href="/rezerwacja/">Rezerwacja <Icon name="arrow" size={16} /></a>
+        </div>
+        <div class="footer-columns">
+          <div><h3>Odwiedź nas</h3><p>ul. Strzelców Bytomskich 226a/1<br/>41-933 Bytom</p><a href="https://maps.google.com/?q=Strzelc%C3%B3w+Bytomskich+226a%2F1+Bytom" target="_blank" rel="noopener">Zobacz na mapie ↗</a></div>
+          <div><h3>Kontakt</h3><p><a href="tel:+48607252521">+48 607 252 521</a><br/><a href="/dane-kontaktowe/">Dane kontaktowe ↗</a></p><p><a href="https://www.instagram.com/groomerhouse_tg/" target="_blank" rel="noopener">Instagram ↗</a><br/><a href="https://www.facebook.com/GroomerHouseStrzyzeniePsow/" target="_blank" rel="noopener">Facebook ↗</a></p></div>
+          <div><h3>Godziny otwarcia</h3><p>Poniedziałek — nieczynne<br/>Wtorek 08:00–16:00<br/>Środa 10:00–18:00<br/>Czwartek 09:00–17:00<br/>Piątek 10:00–18:00<br/>Sobota 10:00–16:00</p></div>
+        </div>
+      </div>
+      <div class="container footer-payments"><p>Groomer House Sylwia Ociepka · NIP 6262553631<br/>ul. Strzelców Bytomskich 226a/1, 41-933 Bytom</p><a href="/regulamin/#platnosci" aria-label="Przelewy24 — zasady płatności za kursy"><span>Płatności za kursy</span><img src="/images/ui/przelewy24.svg" alt="Przelewy24" width="160" height="56" loading="lazy" /></a></div>
+      <div class="container footer-bottom"><span>© {new Date().getFullYear()} Groomer House</span><span><a href="/dane-kontaktowe/">Dane kontaktowe</a> · <a href="/polityka-prywatnosci/">Polityka prywatności</a> · <a href="/regulamin/">Regulamin i rezerwacje</a> · <button type="button" class="footer-cookie-button" data-open-cookie-settings>Ustawienia cookies</button></span></div>
+    </footer>
+    <CookieConsent />
+    <a class="floating-call" href="tel:+48607252521" aria-label="Zadzwoń do Groomer House: +48 607 252 521" aria-hidden="true" tabindex="-1">
+      <img src="/images/ui/floating-call.png" alt="" width="1250" height="1250" loading="lazy" />
+    </a>
+    <script is:inline>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.querySelector('#mobile-menu');
+      menuToggle?.addEventListener('click', () => {
+        const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
+        mobileMenu.hidden = !open;
+      });
+
+      document.querySelectorAll('[data-course-nav]').forEach(group => {
+        const toggle = group.querySelector('.nav-course-toggle');
+        const submenu = group.querySelector('.nav-course-menu');
+        const setOpen = open => {
+          toggle.setAttribute('aria-expanded', String(open));
+          submenu.hidden = !open;
+        };
+        const desktop = Boolean(group.closest('.desktop-nav'));
+        toggle.addEventListener('click', event => setOpen(desktop && event.detail > 0 ? true : toggle.getAttribute('aria-expanded') !== 'true'));
+        if (desktop) {
+          group.addEventListener('mouseenter', () => setOpen(true));
+          group.addEventListener('mouseleave', () => { if (!group.contains(document.activeElement)) setOpen(false); });
+          group.addEventListener('focusin', event => { if (event.target !== toggle) setOpen(true); });
+          group.addEventListener('focusout', event => { if (!group.contains(event.relatedTarget)) setOpen(false); });
+        }
+        document.addEventListener('pointerdown', event => { if (!group.contains(event.target)) setOpen(false); });
+        group.addEventListener('keydown', event => {
+          if (event.key === 'Escape') { toggle.focus(); setOpen(false); event.preventDefault(); }
+        });
+      });
+
+      const floatingCall = document.querySelector('.floating-call');
+      if (floatingCall) {
+        let framePending = false;
+        const updateFloatingCall = () => {
+          framePending = false;
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const wasVisible = floatingCall.classList.contains('is-visible');
+          const isVisible = wasVisible ? scrollTop > 10 : scrollTop > 120;
+          floatingCall.classList.toggle('is-visible', isVisible);
+          floatingCall.setAttribute('aria-hidden', String(!isVisible));
+          floatingCall.tabIndex = isVisible ? 0 : -1;
+        };
+        const scheduleFloatingCall = () => {
+          if (framePending) return;
+          framePending = true;
+          requestAnimationFrame(updateFloatingCall);
+        };
+        window.addEventListener('scroll', scheduleFloatingCall, { passive: true });
+        window.addEventListener('pageshow', updateFloatingCall);
+        updateFloatingCall();
+      }
+    </script>
+  </body>
+</html>

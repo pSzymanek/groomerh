@@ -1,0 +1,104 @@
+<!-- wp:html -->
+<style>
+html,body{margin:0!important;background:#fff!important;}body{padding:0!important;}header.wp-block-template-part,footer.wp-block-template-part,#wpadminbar,.wp-block-post-title{display:none!important;}.wp-site-blocks{padding:0!important;}.wp-site-blocks>main{margin:0!important;padding:8px!important;}.wp-block-post-content{width:100%!important;max-width:1200px!important;margin:0 auto!important;}.wp-block-post-content>*{max-width:none!important;}
+.wp-site-blocks .wp-block-group,.wp-site-blocks .wp-block-post-content{margin:0!important;padding:0!important;width:100%!important;max-width:none!important;box-sizing:border-box!important;}
+#booknetic_theme_6{width:100%!important;max-width:none!important;margin:0!important;box-shadow:none!important;border:1px solid #dfddd5!important;box-sizing:border-box!important;}
+#booknetic_theme_6 .booknetic_appointment_steps{background:#49314d!important;}
+#booknetic_theme_6 .booknetic_appointment_container,#booknetic_theme_6 .booknetic_appointment_container_body{background:#fff!important;}
+#booknetic_theme_6 .booknetic_appointment_container_header,#booknetic_theme_6 .booknetic_appointment_container_footer{background:#f6f5f0!important;}
+#booknetic_theme_6.booknetic_appointment .booknetic_appointment_container .booknetic_btn_primary{background:#49314d!important;border-color:#49314d!important;color:#fff!important;}
+#booknetic_theme_6 .booknetic_btn_secondary{background:#fff!important;color:#49314d!important;border-color:#dfddd5!important;}
+#booknetic_theme_6 .booknetic_active_step .booknetic_badge,#booknetic_theme_6 .booknetic_selected_step .booknetic_badge{background:#cbe5df!important;color:#49314d!important;}
+#booknetic_theme_6 button,#booknetic_theme_6 input,#booknetic_theme_6 .select2-selection{border-radius:0!important;}
+#booknetic_theme_6 .booknetic_calendar_selected_day{background:#cbe5df!important;color:#49314d!important;}
+#booknetic_theme_6 .booknetic_service_duration_wrapper{display:none!important;}
+#booknetic_theme_6 .booknetic_btn_primary:disabled{opacity:.55!important;cursor:not-allowed!important;}
+.gh-booking-documents{margin:0 0 18px;padding:15px 18px;border-left:3px solid #a5ccc2;background:#f6f5f0;color:#696a70;font:13px/1.7 'DM Sans',Arial,sans-serif;}
+.gh-booking-documents p{margin:0!important;}.gh-booking-documents p+p{margin-top:5px!important;}.gh-booking-documents a{color:#49314d;text-decoration:underline;text-underline-offset:3px;}.gh-booking-documents a:focus-visible{outline:2px solid #49314d;outline-offset:3px;}
+</style>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<aside class="gh-booking-documents" aria-label="Informacje o rezerwacji i danych osobowych">
+  <p>Dane z formularza przetwarzamy w celu obsługi zapisu i zawarcia umowy. Szczegóły znajdziesz w <a href="https://groomerhouse.pl/polityka-prywatnosci/" target="_blank" rel="noopener">polityce prywatności</a>.</p>
+  <p><a href="https://groomerhouse.pl/regulamin/" target="_blank" rel="noopener">Regulamin rezerwacji kursów</a> zaakceptujesz przy końcowym zamówieniu, przed przyciskiem „Zamawiam i płacę”.</p>
+</aside>
+<!-- /wp:html -->
+
+<!-- wp:shortcode -->
+[booknetic category=1 staff=1 location=1]
+<!-- /wp:shortcode -->
+
+<!-- wp:html -->
+<script>
+(() => {
+  // Set server-side by the Groomer House checkout plugin; missing config fails closed.
+  const checkout = window.groomerhouseCheckout || {configured:false,mode:'unavailable'};
+  const PAYMENTS_CONNECTED = checkout.configured === true;
+  const setupCheckout = () => {
+    const panel = document.querySelector('.booknetic_appointment');
+    if (!panel) return;
+    const update = () => {
+      // These newer labels are not exposed in Booknetic's native Translator.
+      [['.booknetic_view_more_service_notes_button', 'Pokaż więcej'], ['.booknetic_view_less_service_notes_button', 'Pokaż mniej'], ['.booknetic_try_again_btn', 'Spróbuj ponownie']].forEach(([selector, text]) => {
+        panel.querySelectorAll(selector).forEach(label => { if (label.textContent !== text) label.textContent = text; });
+      });
+      const finalStep = panel.querySelector('.booknetic_active_step[data-step-id="confirm_details"]');
+      const buttons = panel.querySelectorAll('.booknetic_appointment_container_footer .booknetic_next_step_btn, .booknetic_appointment_container_footer .booknetic_confirm_booking_btn');
+      if (Boolean(finalStep) !== panel.classList.contains('gh-checkout-final')) panel.classList.toggle('gh-checkout-final', Boolean(finalStep));
+      buttons.forEach(button => {
+        if (finalStep && !PAYMENTS_CONNECTED) {
+          if (!button.dataset.ghPaymentBlocked) button.dataset.ghOriginalLabel = button.textContent;
+          if (!button.disabled) button.disabled = true;
+          button.dataset.ghPaymentBlocked = 'true';
+          if (button.textContent !== 'Zapłać przez Przelewy24') button.textContent = 'Zapłać przez Przelewy24';
+          button.title = 'Płatność online jest obecnie niedostępna';
+        } else if (button.dataset.ghPaymentBlocked) {
+          delete button.dataset.ghPaymentBlocked;
+          button.disabled = false;
+          button.textContent = button.dataset.ghOriginalLabel || 'DALEJ';
+          delete button.dataset.ghOriginalLabel;
+          button.removeAttribute('title');
+        }
+      });
+      if (finalStep) {
+        const labels = [['label[for="input_deposit_2"]', 'Zaliczka'], ['label[for="input_deposit_1"]', 'Pełna kwota'], ['.booknetic_deposit_price > div:first-child', 'Zaliczka:']];
+        labels.forEach(([selector, text]) => { const label = panel.querySelector(selector); if (label && label.textContent !== text) label.textContent = text; });
+      }
+    };
+    panel.addEventListener('click', event => {
+      if (!PAYMENTS_CONNECTED && panel.classList.contains('gh-checkout-final') && event.target.closest('.booknetic_appointment_container_footer .booknetic_btn_primary')) {
+        event.preventDefault(); event.stopImmediatePropagation();
+      }
+    }, true);
+    new MutationObserver(update).observe(panel, {childList:true, subtree:true, attributes:true, attributeFilter:['class','disabled']});
+    if (window.bookneticHooks) window.bookneticHooks.addFilter('step_validation_confirm_details', result => PAYMENTS_CONNECTED ? result : {status:false,errorMsg:'Płatność online jest obecnie niedostępna.'}, 'groomerhouse-payment-state');
+    update();
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupCheckout, {once:true});
+  else setupCheckout();
+  if (window.parent === window) return;
+  const targets = ['https://groomerhouse.pl', 'https://www.groomerhouse.pl', 'http://127.0.0.1:4387'];
+  let scheduled = false;
+  let lastHeight = 0;
+  const sendSize = () => {
+    scheduled = false;
+    const main = document.querySelector('main');
+    const height = Math.ceil((main?.getBoundingClientRect().height || document.body.getBoundingClientRect().height) + 24);
+    if (height === lastHeight) return;
+    lastHeight = height;
+    targets.forEach(origin => window.parent.postMessage({type:'groomerhouse:booking-height',height}, origin));
+  };
+  const queueSize = () => {
+    if (!scheduled) { scheduled = true; requestAnimationFrame(sendSize); }
+  };
+  const start = () => {
+    new ResizeObserver(queueSize).observe(document.querySelector('main') || document.body);
+    window.addEventListener('resize', queueSize);
+    queueSize();
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, {once:true});
+  else start();
+})();
+</script>
+<!-- /wp:html -->

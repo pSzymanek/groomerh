@@ -1,0 +1,40 @@
+---
+import Layout from "../components/Layout.astro";
+import BlockStream from "../components/BlockStream.astro";
+import CoursePackages from "../components/CoursePackages.astro";
+import "../styles/course-hero.css";
+import { currentCourseOffer } from "../lib/courses";
+import { activePaths, cleanPostHtml, getPage, pageDesign, photos } from "../lib/content";
+import { featuredImage, getPost } from "../lib/wordpress";
+import { stripHtml } from "../lib/snapshot";
+import { seoExcerpt } from "../lib/seo";
+
+const route = `/${Astro.params.path || ""}/`.replace(/\/{2,}/g, "/");
+const redirects: Record<string, string> = { "/cennik-uslug/": "/cennik/", "/glowna/": "/", "/projekt/": "/", "/przykladowa-strona/": "/" };
+if (redirects[route]) return Astro.redirect(redirects[route], 301);
+const page = activePaths.includes(route) ? getPage(route) : undefined;
+const post = !page && route.split("/").filter(Boolean).length === 1 ? await getPost(Astro.params.path || "") : undefined;
+if (!page && !post) Astro.response.status = 404;
+const visibleBlocks = page?.path === "/kurs-groomerski/"
+  ? page.blocks.filter((block) => !(
+      block.type === "rich" && (block.html?.includes("Finansowanie kursu groomerskiego z Urzędu Pracy") || block.html?.includes("PAKIET 1"))
+    ))
+  : page?.blocks || [];
+const displayBlocks = visibleBlocks.map(block => ({ ...block, html: route.includes("kurs-") && block.html ? currentCourseOffer(block.html) : block.html }));
+const design = pageDesign[route];
+const title = post ? stripHtml(post.title.rendered) : page?.title || "Nie znaleziono strony";
+const cover = post ? await featuredImage(post) : undefined;
+const breadcrumbs = [{ name: "Strona główna", path: "/" }, ...(post ? [{ name: "Blog", path: "/blog/" }] : []), { name: title, path: route }];
+const article = post ? { headline: title, publishedGmt: post.date_gmt, modifiedGmt: post.modified_gmt, image: cover } : undefined;
+---
+<Layout title={`${title} | Groomer House`} path={route} noindex={!page && !post} type={post ? "article" : "website"} description={post ? seoExcerpt(post.excerpt.rendered, post.content.rendered) : design?.lead || "Groomer House — salon i centrum szkoleniowe w Bytomiu."} image={cover || design?.photo} imageAlt={post ? title : design?.photoAlt} breadcrumbs={breadcrumbs} article={article}>
+  {post ? <>
+    <section class="post-hero"><div class="container"><div class="breadcrumb"><a href="/">Strona główna</a><span>/</span><a href="/blog/">Blog</a></div><span class="eyebrow">Poradnik Groomer House</span><h1 set:html={post.title.rendered} /><div class="post-meta"><time datetime={post.date.slice(0,10)}>{new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "long", year: "numeric" }).format(new Date(post.date))}</time></div></div></section>
+    {cover && <div class="container"><img class="post-cover" src={cover} alt={title} /></div>}
+    <article class="container post-body"><div class="rich-content" set:html={cleanPostHtml(post.content.rendered)} /><a class="button button-outline" href="/blog/">← Wróć do bloga</a></article>
+  </> : page ? <>
+    <section class:list={["page-hero", { "page-hero-framed": route === "/kurs-groomerski/" }]}><div class="page-hero-copy"><div class="breadcrumb"><a href="/">Strona główna</a><span>/</span>{page.title}</div><span class="eyebrow">{design?.eyebrow || "Groomer House"}</span><h1>{design?.heading || page.title}</h1><p>{design?.lead || "Poznaj Groomer House w Bytomiu."}</p><div><a class="button button-dark" href={route === "/cennik/" ? "/rezerwacja/#salon" : "tel:+48607252521"}>{route === "/cennik/" ? "Umów wizytę" : "Zapytaj o szczegóły"} <span aria-hidden="true">↗</span></a></div></div><img class="page-hero-image" src={design?.photo || photos.hero} alt={design?.photoAlt || page.title} /></section>
+    {route === "/kurs-groomerski/" && <div class="container"><CoursePackages /></div>}
+    <div class="container editorial-layout"><article class="article-content"><BlockStream blocks={displayBlocks} /></article><aside class="editorial-aside"><div class="aside-card"><span class="eyebrow">Groomer House</span><h3>Masz pytania?</h3><p>Chętnie opowiemy o usługach, terminach i szkoleniach.</p><a href="tel:+48607252521">+48 607 252 521 ↗</a><a href="/kurs-groomerski/">Kursy groomerskie ↗</a><a href="/cennik/">Salon i cennik ↗</a><a class="button button-dark" href="/rezerwacja/">Rezerwacja <span aria-hidden="true">↗</span></a></div></aside></div>
+  </> : <div class="container legal-copy"><h1>Nie znaleziono strony</h1><p>Ta podstrona nie istnieje.</p><a class="button button-outline" href="/">Przejdź do strony głównej ↗</a></div>}
+</Layout>

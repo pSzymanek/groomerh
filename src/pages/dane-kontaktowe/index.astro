@@ -1,0 +1,28 @@
+---
+import Layout from "../../components/Layout.astro";
+import GoogleMap from "../../components/GoogleMap.astro";
+export const prerender = true;
+---
+<Layout
+  title="Dane kontaktowe | Groomer House"
+  path="/dane-kontaktowe/"
+  description="Dane firmy Groomer House Sylwia Ociepka w Bytomiu: adres salonu, NIP, telefon, e-mail i numer rachunku bankowego."
+>
+  <article class="container legal-copy">
+    <div class="breadcrumb"><a href="/">Strona główna</a><span>/</span>Dane kontaktowe</div>
+    <h1>Dane kontaktowe</h1>
+    <div class="rich-content">
+      <h2>Groomer House Sylwia Ociepka</h2>
+      <p><strong>NIP:</strong> 6262553631</p>
+      <p><strong>Adres salonu:</strong><br />ul. Strzelców Bytomskich 226a/1<br />41-933 Bytom</p>
+      <p><strong>Telefon:</strong> <a href="tel:+48607252521">+48 607 252 521</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:groomerhousetg@gmail.com">groomerhousetg@gmail.com</a></p>
+
+      <h2>Dane do przelewu</h2>
+      <p><strong>Odbiorca:</strong> Groomer House Sylwia Ociepka</p>
+      <p><strong>Numer rachunku:</strong><br /><span class="contact-account">31 1050 1230 1000 0090 8251 8383</span></p>
+      <p>Przed wpłatą za kurs potwierdź kwotę, tytuł przelewu i termin płatności dla wybranego szkolenia. <a href="/regulamin/#platnosci">Zobacz zasady płatności</a>.</p>
+    </div>
+    <GoogleMap />
+  </article>
+</Layout>

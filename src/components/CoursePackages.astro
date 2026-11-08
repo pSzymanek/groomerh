@@ -1,0 +1,33 @@
+---
+import Icon from "./Icon.astro";
+import { coursePackages, courseProgram, formatCoursePrice } from "../lib/courses";
+import "../styles/course-packages.css";
+const { compact = false } = Astro.props;
+---
+<section class:list={["course-offer", { "course-offer-compact": compact }]} aria-labelledby={compact ? "booking-packages-title" : "course-packages-title"}>
+  <div class="course-offer-heading">
+    <span class="eyebrow">Kursy groomerskie · Groomer House</span>
+    <h2 id={compact ? "booking-packages-title" : "course-packages-title"}>Wybierz pakiet kursu groomerskiego</h2>
+    {!compact && <p>Kurs idealny dla osób, które chcą rozpocząć pracę w zawodzie groomera. Od podstaw nauczysz się pielęgnacji psów różnych ras — od kąpieli i suszenia, po strzyżenie i trymowanie.</p>}
+  </div>
+  <div class="course-package-grid">
+    {coursePackages.map((course) => <article class="course-package" data-course-package={course.id}>
+      <div class="course-package-top"><span class="course-package-number">0{course.id}</span><span class="course-package-icon"><Icon name={course.icon} size={32} /></span></div>
+      <h3>{course.name}</h3>
+      <p class="course-package-hours"><strong>{course.hours}</strong> godzin nauki</p>
+      <p class="course-package-price">{formatCoursePrice(course.price)} <span>zł</span></p>
+      <span class="course-package-tax">Cena brutto za cały pakiet</span>
+      <dl class="course-package-details">
+        <div><dt>Grupa</dt><dd>maks. {course.capacity} osoby</dd></div>
+        <div><dt>Zaliczka</dt><dd>{formatCoursePrice(course.deposit)} zł</dd></div>
+      </dl>
+      {!compact && <a class="button button-dark" href="/rezerwacja/#szkolenia">Sprawdź termin <Icon name="arrow" size={16} /></a>}
+    </article>)}
+  </div>
+  <p class="course-schedule-note"><Icon name="calendar" size={23} /><span><strong>Termin w kalendarzu wskazuje orientacyjny dzień rozpoczęcia.</strong> Dokładny harmonogram 40, 80 lub 120 godzin ustalamy indywidualnie. Czas pojedynczego slotu rezerwacji nie oznacza długości całego kursu.</span></p>
+  {!compact && <div class="course-program-panel">
+    <div><span class="eyebrow">Program każdego pakietu</span><h3>Nauka poprzez praktykę</h3><p>Wybierasz liczbę godzin; program obejmuje najważniejsze umiejętności pracy w salonie groomerskim.</p></div>
+    <ul>{courseProgram.map((item) => <li><Icon name="check" size={19} /><span>{item}</span></li>)}</ul>
+    <p class="course-program-bonus"><Icon name="sparkles" size={22} /><span><strong>Bonus:</strong> dzień pracy z nauką kociego groomingu lub usuwania kamienia nazębnego szczoteczką ultradźwiękową.</span></p>
+  </div>}
+</section>

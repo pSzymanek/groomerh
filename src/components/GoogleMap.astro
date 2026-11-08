@@ -1,0 +1,30 @@
+---
+const address = "ul. Strzelców Bytomskich 226a/1, 41-933 Bytom";
+const query = encodeURIComponent(address);
+const embedUrl = `https://maps.google.com/maps?q=${query}&hl=pl&z=16&output=embed`;
+// Universal Google Maps link – on Android/iOS opens the Google Maps app when installed.
+const placeUrl = `https://www.google.com/maps/search/?api=1&query=${query}`;
+const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${query}`;
+---
+
+<section class="contact-map" aria-labelledby="contact-map-title">
+  <div class="contact-map-heading">
+    <span class="eyebrow">Dojazd</span>
+    <h2 id="contact-map-title">Znajdź nas w Bytomiu</h2>
+    <p>{address}</p>
+  </div>
+  <div class="contact-map-frame">
+    <iframe
+      src={embedUrl}
+      title="Mapa dojazdu do Groomer House w Bytomiu"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      tabindex="-1"
+      aria-hidden="true"
+    ></iframe>
+    <a class="contact-map-open" href={placeUrl} target="_blank" rel="noopener noreferrer" aria-label={`Otwórz adres ${address} w Mapach Google`}>
+      <span class="contact-map-open-label">Otwórz w Mapach Google <span aria-hidden="true">↗</span></span>
+    </a>
+  </div>
+  <a class="contact-map-directions" href={directionsUrl} target="_blank" rel="noopener noreferrer">Wyznacz trasę w Google Maps <span aria-hidden="true">↗</span></a>
+</section>

@@ -1,0 +1,26 @@
+<!-- wp:shortcode -->
+[woocommerce_checkout]
+<!-- /wp:shortcode -->
+
+<!-- wp:html -->
+<script>
+(() => {
+  if (window.parent === window) return;
+  const start = () => {
+    if (!window.jQuery) return;
+    window.jQuery('form.checkout').on('checkout_place_order_success.groomerhouse', (_event, result) => {
+      let url;
+      try { url = new URL(result.redirect); } catch { return; }
+      if (url.protocol !== 'https:' || !['secure.przelewy24.pl','sandbox.przelewy24.pl'].includes(url.hostname) || url.username || url.password || url.port) return;
+      ['https://groomerhouse.pl','https://www.groomerhouse.pl','http://127.0.0.1:4387'].forEach(origin => {
+        window.parent.postMessage({type:'groomerhouse:payment-redirect',url:url.href}, origin);
+      });
+      // Banks/payment operators may refuse iframes. The parent navigates in the same tab.
+      return false;
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, {once:true});
+  else start();
+})();
+</script>
+<!-- /wp:html -->

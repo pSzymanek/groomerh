@@ -9,18 +9,30 @@
     "export:wordpress": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/export-wordpress.ps1",
     "dev": "npm run prepare:assets && astro dev --host 127.0.0.1",
     "build": "npm run prepare:assets && astro check && astro build",
+    "build:webd": "npm run prepare:assets && astro check && astro build --config astro.config.webd.mjs && node tools/wrap-webd-entry.mjs",
+    "export:webd": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/export-webd.ps1",
     "preview": "node dist/server/entry.mjs"
   },
   "dependencies": {
-    "@astrojs/vercel": "^10.0.8",
-    "astro": "^6.3.0"
+    "@astrojs/node": "^11.1.7",
+    "@astrojs/vercel": "^11.0.13",
+    "astro": "^7.3.8",
+    "cheerio": "^1.2.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
     "@types/node": "^24.0.0",
     "typescript": "^5.9.0"
   },
+  "overrides": {
+    "@vercel/routing-utils": {
+      "path-to-regexp": "6.3.0"
+    },
+    "@vercel/cli-config": {
+      "zod": "4.6.7"
+    }
+  },
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=22.19.0"
   }
 }

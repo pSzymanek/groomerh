@@ -1,43 +1,90 @@
 ---
-const wordpress = (import.meta.env.WORDPRESS_URL || "https://groomerhouse.pl").replace(/\/$/, "");
-const bookingUrl = `${wordpress}/rezerwacja/?embed=1`;
+import Layout from "../../components/Layout.astro";
+import CoursePackages from "../../components/CoursePackages.astro";
+import "../../styles/booking.css";
+
+const booksyUrl = "https://booksy.com/pl-pl/dl/show-business/203451?utm_medium=c2c_referral";
+const bookneticUrl = "https://wp.groomerhouse.pl/index.php/rezerwacja/";
+// WordPress exposes the existing three course packages, with its own calendar.
+const bookneticReady = (process.env.BOOKNETIC_ENABLED ?? import.meta.env.BOOKNETIC_ENABLED ?? "true") === "true";
+const configuredEmbed = process.env.BOOKING_EMBED_URL || import.meta.env.BOOKING_EMBED_URL || bookneticUrl;
+let bookingEmbed = "";
+
+// Never embed an arbitrary URL or display the form before it is ready.
+if (bookneticReady && configuredEmbed) {
+  try {
+    const url = new URL(configuredEmbed);
+    const allowedPath = ["/rezerwacja/", "/index.php/rezerwacja/"].includes(url.pathname);
+    const allowedQuery = !url.search || url.search === "?embed=1";
+    if (url.protocol === "https:" && url.hostname === "wp.groomerhouse.pl" && !url.port && !url.username && !url.password && allowedPath && allowedQuery && !url.hash) {
+      bookingEmbed = url.toString();
+    }
+  } catch { /* A malformed URL leaves the safe phone-contact state. */ }
+}
 ---
-<!doctype html>
-<html lang="pl-PL">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rezerwacja wizyty | Groomer House</title>
-    <meta name="description" content="Umów wizytę w Groomer House przez bezpieczny formularz rezerwacyjny Booknetic." />
-    <link rel="icon" href="/wp-content/uploads/2023/08/particles_2-150x150.png" sizes="32x32" />
-    <style>
-      :root { color: #17142d; font-family: Arial, Helvetica, sans-serif; background: #f8f7fb; }
-      * { box-sizing: border-box; }
-      body { margin: 0; }
-      header { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px clamp(20px, 8vw, 160px); background: white; }
-      header img { width: 90px; height: auto; }
-      header a { color: #17142d; font-weight: 700; text-decoration: none; }
-      main { width: min(1180px, calc(100% - 32px)); margin: 32px auto 64px; }
-      h1 { margin: 0 0 10px; font-size: clamp(2rem, 5vw, 4rem); }
-      p { color: #5e5b70; margin: 0 0 28px; }
-      .frame { min-height: 720px; overflow: hidden; border-radius: 18px; background: white; box-shadow: 0 16px 60px rgba(23, 20, 45, .12); }
-      iframe { display: block; width: 100%; min-height: 720px; border: 0; }
-      .note { margin-top: 18px; font-size: .9rem; text-align: center; }
-      @media (max-width: 640px) { header { min-height: 76px; padding: 10px 18px; } header img { width: 72px; } main { margin-top: 22px; } .frame, iframe { min-height: 780px; border-radius: 12px; } }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="/" aria-label="Groomer House — strona główna"><img src="/wp-content/uploads/2023/08/logo-1.png" alt="Groomer House" /></a>
-      <a href="/">Wróć do strony głównej</a>
-    </header>
-    <main>
-      <h1>Umów wizytę</h1>
-      <p>Wybierz usługę i dogodny termin w formularzu Groomer House.</p>
-      <div class="frame">
-        <iframe src={bookingUrl} title="Rezerwacja wizyty Groomer House" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<Layout title="Rezerwacja szkoleń i wizyt | Groomer House" path="/rezerwacja/" description="Zapisz się na szkolenie groomerskie lub umów strzyżenie psa w salonie Groomer House w Bytomiu.">
+  <section class="page-hero booking-hero">
+    <div class="page-hero-copy">
+      <div class="breadcrumb"><a href="/">Strona główna</a><span>/</span>Rezerwacja</div>
+      <span class="eyebrow">Groomer House</span>
+      <h1>Rezerwacja</h1>
+      <p>Tu znajdziesz zapisy na szkolenia groomerskie. Na wizytę z psem zapiszesz się przez Booksy poniżej.</p>
+    </div>
+  </section>
+
+  <div class="container booking-layout">
+    <section class="booking-section booking-section-primary" id="szkolenia" aria-labelledby="training-booking-title">
+      <div class="booking-section-heading">
+        <span class="eyebrow">Szkolenia groomerskie</span>
+        <h2 id="training-booking-title">Zarezerwuj miejsce na kursie</h2>
+        <p>Wybierz pakiet i orientacyjny dzień rozpoczęcia szkolenia. Prowadząca: Sylwia Ociepka.</p>
       </div>
-      <p class="note">Formularz nie wyświetla się poprawnie? <a href={bookingUrl} target="_blank" rel="noopener">Otwórz rezerwację w nowym oknie</a>.</p>
-    </main>
-  </body>
-</html>
+      <CoursePackages compact />
+      {bookingEmbed ? <>
+        <div class="booking-section-body" data-booking-embed>
+          <iframe class="booking-frame" id="booknetic-booking-frame" src={bookingEmbed} title="Rezerwacja szkolenia groomerskiego w Booknetic" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <p class="booking-help">Problem z formularzem? <button class="booking-reload" type="button" data-booking-reload>Wczytaj ponownie</button> lub <a href="tel:+48607252521">zadzwoń: +48 607 252 521</a>.</p>
+      </> : <div class="booking-section-body">
+        <p>W sprawie terminu i dostępności pakietów skontaktuj się z nami telefonicznie.</p>
+        <a class="button button-dark" href="tel:+48607252521">Zapytaj o szkolenie <span aria-hidden="true">↗</span></a>
+      </div>}
+      <p class="booking-help">Sprawdź <a href="/regulamin/#rezerwacja-kursow">zasady rezerwacji i płatności za kursy</a> oraz <a href="/polityka-prywatnosci/">politykę prywatności</a>.</p>
+    </section>
+
+    <section class="booking-section booking-section-secondary" id="salon" aria-labelledby="salon-booking-title">
+      <div class="booking-section-heading">
+        <span class="eyebrow">Wizyta z psem</span>
+        <h2 id="salon-booking-title">Strzyżenie i pielęgnacja psa</h2>
+        <p>Na wizytę w salonie nadal zapiszesz się przez Booksy.</p>
+      </div>
+      <div class="booking-actions">
+        <a class="button button-outline" href={booksyUrl} target="_blank" rel="noopener noreferrer">Umów wizytę w Booksy <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="tel:+48607252521">Zadzwoń: +48 607 252 521 <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="booking-help">Przed potwierdzeniem wizyty sprawdź w Booksy warunki płatności i odwołania. <a href="/regulamin/#rezerwacja-booksy">Zasady rezerwacji wizyt</a>.</p>
+    </section>
+  </div>
+  <script>
+    const frame = document.querySelector<HTMLIFrameElement>("#booknetic-booking-frame");
+    document.querySelector("[data-booking-reload]")?.addEventListener("click", () => {
+      if (frame) frame.src = frame.src;
+    });
+    window.addEventListener("message", (event) => {
+      if (!frame || event.source !== frame.contentWindow || event.origin !== new URL(frame.src).origin) return;
+      if (event.data?.type === "groomerhouse:payment-redirect") {
+        try {
+          const url = new URL(event.data.url);
+          if (url.protocol !== "https:" || !["secure.przelewy24.pl", "sandbox.przelewy24.pl"].includes(url.hostname) || url.username || url.password || url.port) return;
+          window.location.assign(url.href);
+        } catch { /* Ignore malformed or untrusted destinations. */ }
+        return;
+      }
+      if (event.data?.type !== "groomerhouse:booking-height") return;
+      const height = event.data.height;
+      if (typeof height !== "number" || !Number.isFinite(height) || height < 300 || height > 3000) return;
+      frame.style.height = `${Math.ceil(height)}px`;
+    });
+  </script>
+</Layout>

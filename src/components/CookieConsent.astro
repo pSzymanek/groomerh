@@ -1,0 +1,32 @@
+<div class="cookie-consent" data-cookie-consent hidden>
+  <section class="cookie-consent-panel" aria-labelledby="cookie-consent-title">
+    <div class="cookie-consent-copy">
+      <span class="eyebrow">Prywatność</span>
+      <h2 id="cookie-consent-title">Wybierz, na co się zgadzasz</h2>
+      <p>Używamy niezbędnych technologii do działania strony. Za Twoją zgodą możemy też włączyć statystyki Google Analytics 4 i reklamowy Meta Pixel. Odmowa nie ograniczy dostępu do strony. <a href="/polityka-prywatnosci/#cookies">Więcej w polityce prywatności</a>.</p>
+    </div>
+    <div class="cookie-consent-settings" id="cookie-consent-settings" data-cookie-settings hidden>
+      <label class="cookie-consent-option">
+        <input type="checkbox" checked disabled />
+        <span><strong>Niezbędne</strong><small>Działanie strony i zapis Twojego wyboru. Zawsze aktywne.</small></span>
+      </label>
+      <label class="cookie-consent-option">
+        <input type="checkbox" data-cookie-analytics />
+        <span><strong>Analityczne — GA4</strong><small>Pomagają zrozumieć, jak odwiedzający korzystają ze strony.</small></span>
+      </label>
+      <label class="cookie-consent-option">
+        <input type="checkbox" data-cookie-marketing />
+        <span><strong>Marketingowe — Meta Pixel</strong><small>Pomagają mierzyć skuteczność reklam i tworzyć ich odbiorców.</small></span>
+      </label>
+      <button type="button" class="cookie-consent-button" data-cookie-action="save">Zapisz wybór</button>
+    </div>
+    <div class="cookie-consent-actions">
+      <button type="button" class="cookie-consent-button" data-cookie-action="reject">Odrzuć opcjonalne</button>
+      <button type="button" class="cookie-consent-button cookie-consent-button-muted" data-cookie-action="settings" aria-expanded="false" aria-controls="cookie-consent-settings">Ustawienia</button>
+      <button type="button" class="cookie-consent-button" data-cookie-action="accept">Akceptuj wszystkie</button>
+    </div>
+  </section>
+</div>
+<script>
+  import "../scripts/cookie-consent.js";
+</script>

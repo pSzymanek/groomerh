@@ -1,0 +1,16 @@
+---
+import Layout from "../../components/Layout.astro";
+import { photos } from "../../lib/content";
+import { featuredImage, getPosts, postPath } from "../../lib/wordpress";
+import { stripHtml } from "../../lib/snapshot";
+
+const posts = await getPosts();
+const images = await Promise.all(posts.map(featuredImage));
+---
+<Layout title="Blog | Groomer House" path="/blog/" description="Porady o pielęgnacji psów i kotów oraz o pracy groomera — blog Groomer House.">
+  <section class="blog-hero"><div class="container"><div class="breadcrumb"><a href="/">Strona główna</a><span>/</span>Blog</div><span class="eyebrow">Groomer House</span><h1>Blog</h1></div></section>
+  <section class="section-pad"><div class="container"><div class="blog-grid">
+    {posts.length === 0 && <p>Nowe artykuły pojawią się wkrótce.</p>}
+    {posts.map((post, index) => <a class="blog-card" href={postPath(post)}><img src={images[index] || photos.salonDetail} alt={stripHtml(post.title.rendered)} loading="lazy" /><div class="blog-card-body"><time datetime={post.date.slice(0,10)}>{new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "long", year: "numeric" }).format(new Date(post.date))}</time><h2 set:html={post.title.rendered} /><p>{stripHtml(post.excerpt.rendered).slice(0, 170)}{stripHtml(post.excerpt.rendered).length > 170 ? "…" : ""}</p><b>Czytaj artykuł ↗</b></div></a>)}
+  </div></div></section>
+</Layout>

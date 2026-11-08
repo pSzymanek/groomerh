@@ -1,0 +1,38 @@
+---
+import Layout from "../../components/Layout.astro";
+import { getSuccessPage, SUCCESS_PAGE_PATH } from "../../lib/wordpress-pages";
+import { cleanWordPressPageHtml, wordPressPageText } from "../../lib/wordpress-page-content";
+import "../../styles/wordpress-page.css";
+
+export const prerender = false;
+const result = await getSuccessPage();
+const page = result.state === "published" ? result.page : undefined;
+const unavailable = result.state === "unavailable";
+Astro.response.status = page ? 200 : unavailable ? 503 : 404;
+Astro.response.headers.set("Cache-Control", "private, no-store");
+if (unavailable) Astro.response.headers.set("Retry-After", "60");
+const title = page ? wordPressPageText(page.title.rendered) || "Sukcesy naszych klientów" : "Sukcesy naszych klientów";
+const content = page ? cleanWordPressPageHtml(page.content.rendered) : "";
+const description = wordPressPageText(content).slice(0, 155) || "Sukcesy naszych klientów — Groomer House w Bytomiu.";
+const featured = page?._embedded?.["wp:featuredmedia"]?.[0];
+const image = featured?.source_url && /^https:\/\//i.test(featured.source_url) ? featured.source_url : undefined;
+---
+<Layout title={`${title} | Groomer House`} path={SUCCESS_PAGE_PATH} description={description} noindex={!page} image={image} imageAlt={image ? featured?.alt_text || title : undefined} modifiedGmt={page?.modified_gmt}>
+  <section class="cms-page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span>{title}</span></nav>
+      <span class="eyebrow">Groomer House · Bytom</span>
+      <h1>{title}</h1>
+    </div>
+  </section>
+  <div class="container cms-page-wrap">
+    {page ? <article class="cms-page-content" data-wordpress-page={page.id}>
+      {image && <figure class="cms-featured"><img src={image} alt={featured?.alt_text || ""} decoding="async" /></figure>}
+      <div class="wordpress-content" set:html={content} />
+    </article> : <section class="cms-page-content cms-page-message">
+      <h2>{unavailable ? "Nie możemy teraz wczytać treści" : "Nie znaleziono strony"}</h2>
+      <p>{unavailable ? "Spróbuj ponownie za chwilę. Pozostałe części serwisu są dostępne." : "Ta strona nie jest obecnie dostępna."}</p>
+      <a class="button button-outline" href={unavailable ? SUCCESS_PAGE_PATH : "/"}>{unavailable ? "Wczytaj ponownie" : "Wróć na stronę główną"}</a>
+    </section>}
+  </div>
+</Layout>

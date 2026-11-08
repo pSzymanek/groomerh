@@ -1,0 +1,17 @@
+---
+import { demoteEmbeddedH1, type ContentBlock } from "../lib/content";
+import "../styles/faq.css";
+const { blocks = [] } = Astro.props as { blocks: ContentBlock[] };
+---
+<div class="block-stream">
+  {blocks.map((block) => {
+    if (block.type === "heading") {
+      const Tag = (block.level === 4 ? "h4" : block.level === 3 ? "h3" : "h2") as "h2" | "h3" | "h4";
+      return <Tag class="stream-heading">{block.text}</Tag>;
+    }
+    if (block.type === "rich") return <div class="rich-content" set:html={demoteEmbeddedH1(block.html || "")} />;
+    if (block.type === "image") return <figure class:list={["stream-image", { "stream-image--certificate": (block.src || "").includes("sylwia-ociepka-instruktor-groomingu") }]}><img src={block.src} alt={block.alt || ""} loading="lazy" /></figure>;
+    if (block.type === "button") return <a class="button button-outline stream-button" href={block.href}>{block.text} <span aria-hidden="true">↗</span></a>;
+    return null;
+  })}
+</div>

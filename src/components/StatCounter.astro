@@ -1,0 +1,23 @@
+---
+import "../styles/stat-counters.css";
+interface Props {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  compact?: boolean;
+}
+const { value, prefix = "", suffix = "", compact = false } = Astro.props;
+const accessibleValue = `${prefix ? prefix + " " : ""}${value}${suffix === "+" ? "+" : suffix ? " " + suffix : ""}`;
+---
+<strong class:list={["stat-value", { "stat-value-compact": compact }]} data-stat-counter data-count-target={value}>
+  <span class="stat-value-a11y">{accessibleValue}</span>
+  <span class="stat-visual" aria-hidden="true">
+    {prefix && <span class="stat-prefix">{prefix}</span>}
+    <span class="stat-number" data-count-value style={`--stat-number-width:${String(value).length}ch`}>{value}</span>
+    {suffix && <span class="stat-suffix">{suffix}</span>}
+  </span>
+</strong>
+<script>
+  import { initStatCounters } from "../scripts/stat-counters";
+  initStatCounters();
+</script>

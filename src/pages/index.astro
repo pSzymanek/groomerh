@@ -1,0 +1,67 @@
+---
+import Layout from "../components/Layout.astro";
+import Icon from "../components/Icon.astro";
+import StatCounter from "../components/StatCounter.astro";
+import { businessStats } from "../lib/business-stats";
+import { getPage, homeCard, photos } from "../lib/content";
+export const prerender = true;
+const home = getPage("/")!;
+const courses = home.blocks.slice(5, 10).map(homeCard);
+const services = home.blocks.slice(12, 18).map(homeCard);
+const benefits = home.blocks.slice(20, 25).map(homeCard);
+const courseImages = [
+  "kurs-podstawowy-groomingu.webp",
+  "kurs-groomingu-kotow.webp",
+  "kurs-doskonalacy-rasy.webp",
+  "kurs-trymowania.webp",
+  "kurs-czyszczenia-zebow.webp",
+];
+const serviceImages = [
+  "czyszczenie-zebow.webp",
+  "pielegnacja-kotow.webp",
+  "kapiele.webp",
+  "strzyzenie.webp",
+  "trymowanie.webp",
+  "obcinanie-pazurkow.webp",
+];
+---
+<Layout path="/">
+  <section class="hero">
+    <img class="hero-photo" src={photos.hero} alt="Zespół Groomer House podczas pielęgnacji psa" fetchpriority="high" />
+    <div class="container hero-content">
+      <span class="eyebrow">Groomer House · Bytom</span>
+      <h1>Kursy Groomerskie <br/><em>i Profesjonalny Groomer</em></h1>
+      <p>Oferujemy kompleksowe zabiegi pielęgnacyjne: od kąpieli i strzyżenia, przez trymowanie, po pielęgnację pazurków i uszu. Każde zwierzę traktujemy indywidualnie.</p>
+      <div class="hero-actions"><a class="button button-light" href="/cennik/">Poznaj naszą ofertę <Icon name="arrow" size={16} /></a><a class="hero-link" href="/kurs-groomerski/">Kursy Groomerskie <Icon name="arrow" size={16} /></a></div>
+    </div>
+  </section>
+  <div class="stat-strip">
+    <div class="container stat-inner">
+      <div class="stat">
+        <span class="stat-icon" aria-hidden="true"><Icon name="scissors" /></span>
+        <div class="stat-copy"><StatCounter value={businessStats.experienceYears} prefix="ponad" suffix="lat" /><span class="stat-label">doświadczenia jako praktykujący groomer</span></div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon" aria-hidden="true"><Icon name="graduation" /></span>
+        <div class="stat-copy"><StatCounter value={businessStats.graduates} suffix="+" /><span class="stat-label">kursantów, którzy nam zaufali</span></div>
+      </div>
+      <div class="stat stat-place">
+        <span class="stat-icon" aria-hidden="true"><Icon name="map" /></span>
+        <div class="stat-copy"><strong>Bytom</strong><span class="stat-label">salon i centrum szkoleniowe</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-pad" id="uslugi"><div class="container"><div class="section-intro"><div><span class="eyebrow">Nasze usługi</span><h2 class="section-heading">Pielęgnacja dla psów i kotów</h2></div><p class="section-lead">Oferujemy kompleksowe zabiegi pielęgnacyjne: od kąpieli i strzyżenia, przez trymowanie, po pielęgnację pazurków i uszu. Każde zwierzę traktujemy indywidualnie – z cierpliwością i miłością, z troską o każdy detal.</p></div><div class="service-grid">
+    {services.map((service, index) => <a class="service-card" href="/cennik/"><img src={`/images/home/uslugi/${serviceImages[index]}`} alt="" width="512" height="416" loading="lazy" /><div class="service-body"><h3>{service.title}</h3><p>{service.description}</p><span class="card-link">Sprawdź ofertę i cennik <Icon name="arrow" size={16} /></span></div></a>)}
+  </div></div></section>
+
+  <section class="section-pad cream-section"><div class="container split-section"><div class="split-media"><img src={photos.about} alt="Sylwia Ociepka — instruktorka i właścicielka Groomer House" loading="lazy" /><span class="split-badge"><StatCounter value={businessStats.experienceYears} prefix="ponad" suffix="lat" compact /><span class="badge-description">doświadczenia</span></span></div><div class="split-copy"><span class="eyebrow">Groomer House</span><h2>Profesjonalizm i doświadczenie</h2><p>Salon prowadzony przez doświadczoną groomerkę i pomocnika — mały zespół, duża pasja i indywidualne podejście do każdego pupila. Kompleksowa pielęgnacja na najwyższym poziomie.</p><p>Każdy zwierzak ma inny charakter, temperament i potrzeby — dlatego w Groomer House nie działamy „taśmowo”.</p><a class="button button-outline" href="/o-mnie/">O mnie <Icon name="arrow" size={16} /></a></div></div></section>
+
+  <section class="section-pad" id="kursy"><div class="container"><div class="section-intro"><div><span class="eyebrow">Nasze usługi</span><h2 class="section-heading">Kursy Groomerskie Śląsk</h2></div><p class="section-lead">Zostań profesjonalnym groomerem z Groomer House Bytom. Otwórz drzwi do pracy z pasją, w której każdy dzień pachnie psim szczęściem.</p></div><div class="course-grid">
+    {courses.map((course, index) => <a class="course-card" href={index === 1 ? "/kurs-grooming-kotow/" : index === 0 ? "/podstawowy-kurs-groomerski-slask/" : "/kurs-groomerski/"}><img src={`/images/home/kursy/${courseImages[index]}`} alt="" width="1200" height="800" loading="lazy" /><div class="course-card-content"><h3>{course.title}</h3><p>{course.description}</p><b>Dowiedz się więcej <Icon name="arrow" size={16} /></b></div></a>)}
+  </div></div></section>
+
+  <section class="section-pad-sm cream-section"><div class="container"><div class="section-intro"><div><span class="eyebrow">Groomer House</span><h2 class="section-heading">Dlaczego warto wybrać nasz salon?</h2></div></div><div class="benefit-grid">{benefits.map((benefit, index) => <div class="benefit-card"><span aria-hidden="true"><Icon name={(["calendar","graduation","heart","scissors","sparkles"] as const)[index]} /></span><h3>{benefit.title}</h3><p>{benefit.description}</p></div>)}</div></div></section>
+  <section class="contact-band"><div class="container contact-band-inner"><div><span class="eyebrow">Kontakt</span><h2>Znajdziesz nas tutaj</h2><p>Bytom · ul. Strzelców Bytomskich 226a/1 · +48 607 252 521</p></div><a class="button button-dark" href="/rezerwacja/#salon">Umów wizytę <Icon name="arrow" size={16} /></a></div></section>
+</Layout>

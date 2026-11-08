@@ -13,4 +13,15 @@ for (const directory of ["wp-content", "wp-includes"]) {
   await cp(source, target, { recursive: true, force: true });
 }
 
-console.log("Prepared preserved WordPress assets in public/.");
+await cp(
+  path.resolve("assets", "home"),
+  path.join(publicRoot, "images", "home"),
+  { recursive: true, force: true },
+);
+await cp(
+  path.resolve("assets", "ui"),
+  path.join(publicRoot, "images", "ui"),
+  { recursive: true, force: true },
+);
+
+console.log("Prepared preserved WordPress assets and site illustrations in public/.");

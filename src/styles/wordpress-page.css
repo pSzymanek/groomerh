@@ -1,0 +1,44 @@
+.cms-page-hero{padding:64px 0 82px;background:var(--cream);border-bottom:1px solid var(--line)}
+.cms-page-hero .breadcrumb{margin-bottom:32px;flex-wrap:wrap}
+.cms-page-hero h1{font-size:clamp(38px,5.4vw,72px);max-width:960px;margin:22px 0 0;overflow-wrap:anywhere}
+.cms-page-wrap{padding-block:58px 100px}
+.cms-page-content{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--mint-dark);padding:clamp(24px,4.5vw,64px)}
+.cms-page-content>*:last-child,.wordpress-content>*:last-child{margin-bottom:0}
+.wordpress-content{font-size:17px;line-height:1.8;overflow-wrap:anywhere}
+.wordpress-content>p:first-child{font-size:clamp(19px,2.2vw,24px);line-height:1.6;color:var(--plum);max-width:900px}
+.wordpress-content h2{font-size:clamp(28px,3.2vw,42px);margin:44px 0 20px}
+.wordpress-content h3{font-size:25px;margin:32px 0 16px}
+.wordpress-content h4{font-size:21px}
+.wordpress-content p{margin-bottom:24px}
+.wordpress-content a{text-underline-offset:4px;color:var(--plum)}
+.wordpress-content a:focus-visible{outline:3px solid var(--mint-dark);outline-offset:4px}
+.cms-featured{margin:0 0 42px;background:var(--paper)}
+.cms-featured img{width:100%;max-height:650px;object-fit:contain}
+.wordpress-content figure{margin:30px 0}
+.wordpress-content img{max-width:100%;height:auto;object-fit:contain}
+.wordpress-content figcaption{margin-top:12px;font-size:13px;line-height:1.5;color:var(--muted)}
+.wordpress-content blockquote{margin:32px 0;padding:24px 30px;border-left:4px solid var(--mint-dark);background:var(--paper)}
+.wordpress-content blockquote p:last-child{margin-bottom:0}
+.wordpress-content .wp-block-columns{display:flex;flex-wrap:wrap;gap:30px;margin:32px 0;align-items:flex-start}
+.wordpress-content .wp-block-column{flex:1 1 240px;min-width:0}
+.wordpress-content .wp-block-group{padding:28px;border:1px solid var(--line);margin:28px 0}
+.wordpress-content .wp-block-column>.wp-block-group{margin:0}
+.wordpress-content .wp-block-group>*:first-child{margin-top:0}
+.wordpress-content .wp-block-gallery{display:flex;flex-wrap:wrap;gap:20px;margin:32px 0;justify-content:center}
+.wordpress-content .wp-block-gallery figure{flex:1 1 260px;max-width:100%;margin:0}
+.wordpress-content .wp-block-gallery img{width:100%;height:auto}
+.wordpress-content .wp-block-media-text{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center;margin:32px 0}
+.wordpress-content .wp-block-media-text figure{margin:0}
+.wordpress-content .wp-block-buttons{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0}
+.wordpress-content .wp-block-button__link{display:inline-flex;align-items:center;justify-content:center;padding:17px 24px;background:var(--plum);color:white;font:700 14px/1.4 Manrope,sans-serif;text-decoration:none;border:1px solid var(--plum);border-radius:0}
+.wordpress-content .wp-block-button__link:hover{background:var(--plum-deep)}
+.wordpress-content .is-style-outline .wp-block-button__link{background:transparent;color:var(--plum)}
+.wordpress-content .has-text-align-center{text-align:center}
+.wordpress-content .has-text-align-right{text-align:right}
+.wordpress-content .aligncenter{margin-inline:auto}
+.wordpress-content hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+.wordpress-content .wp-block-table{overflow-x:auto}
+.wordpress-content table{border-collapse:collapse;width:100%;font-size:15px}
+.wordpress-content td,.wordpress-content th{border:1px solid var(--line);padding:12px;text-align:left}
+.cms-page-message h2{font-size:28px}
+@media(max-width:650px){.cms-page-hero{padding:38px 0 45px}.cms-page-hero .breadcrumb{font-size:11px}.cms-page-wrap{padding-block:28px 60px}.wordpress-content{font-size:16px}.wordpress-content .wp-block-columns{display:block}.wordpress-content .wp-block-column+.wp-block-column{margin-top:24px}.wordpress-content .wp-block-group{padding:20px}.wordpress-content .wp-block-media-text{grid-template-columns:minmax(0,1fr)}.wordpress-content .wp-block-buttons,.wordpress-content .wp-block-button,.wordpress-content .wp-block-button__link{width:100%}}
