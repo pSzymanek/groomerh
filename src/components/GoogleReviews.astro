@@ -1,0 +1,107 @@
+---
+import "../styles/google-reviews.css";
+import { googleReviews } from "../lib/google-reviews";
+import { mapPlaceUrl } from "../lib/location";
+
+interface Props { eyebrow?: string; title?: string }
+const { eyebrow = "Opinie z Google", title = "Zobacz, co mówią nasi klienci" } = Astro.props;
+
+const perSlide = 3;
+const slides = Array.from({ length: Math.ceil(googleReviews.length / perSlide) }, (_, i) => googleReviews.slice(i * perSlide, i * perSlide + perSlide));
+const avatarColors = ["#49314d", "#5f8f86", "#8a5a83", "#3f6f8f", "#a0644a", "#6b5b95"];
+const initial = (name: string) => name.replace(/[^\p{L}]/gu, "").charAt(0).toUpperCase() || "G";
+const stars = Array.from({ length: 5 });
+---
+
+<section class="google-reviews" aria-labelledby="google-reviews-title" data-reviews>
+  <div class="container">
+    <div class="google-reviews-head">
+      <div>
+        <span class="eyebrow">{eyebrow}</span>
+        <h2 id="google-reviews-title" class="section-heading">{title}</h2>
+      </div>
+      <a class="google-reviews-badge" href={mapPlaceUrl} target="_blank" rel="noopener noreferrer" aria-label="Opinie o Groomer House w Google">
+        <span class="google-wordmark" aria-hidden="true"><b style="color:#4285F4">G</b><b style="color:#EA4335">o</b><b style="color:#FBBC05">o</b><b style="color:#4285F4">g</b><b style="color:#34A853">l</b><b style="color:#EA4335">e</b></span>
+        <span class="google-reviews-badge-rating">
+          <span class="google-stars" aria-hidden="true">{stars.map(() => <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.1 5.9L10 14.8l-5.3 2.9 1.1-5.9L1.4 7.7l6-.7z" /></svg>)}</span>
+        </span>
+        <small>Wybrane opinie z Google ↗</small>
+      </a>
+    </div>
+
+    <div class="google-reviews-viewport">
+      <div class="google-reviews-track" data-reviews-track>
+        {slides.map((slide, slideIndex) => (
+          <div class="google-reviews-slide" role="group" aria-roledescription="slajd" aria-label={`Opinie ${slideIndex + 1} z ${slides.length}`} data-reviews-slide>
+            {slide.map((review, i) => (
+              <article class="google-review">
+                <header>
+                  <span class="google-review-avatar" style={`background:${avatarColors[(slideIndex * perSlide + i) % avatarColors.length]}`} aria-hidden="true">{initial(review.author)}</span>
+                  <strong class="google-review-author">{review.author}</strong>
+                  <svg class="google-g" viewBox="0 0 48 48" role="img" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 2.9-2.2 5.4-4.7 7.1l7.6 5.9c4.4-4.1 6.9-10.1 6.9-17.5z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.5 0 20.1 0 24s1 7.5 2.6 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>
+                </header>
+                <div class="google-stars" role="img" aria-label="Ocena 5 na 5">{stars.map(() => <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.1 5.9L10 14.8l-5.3 2.9 1.1-5.9L1.4 7.7l6-.7z" /></svg>)}</div>
+                <p class="google-review-text" data-review-text>{review.text}</p>
+                <button class="google-review-more" type="button" data-review-more hidden aria-expanded="false">Czytaj więcej</button>
+              </article>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="google-reviews-controls">
+      <button class="google-reviews-arrow" type="button" data-reviews-prev aria-label="Poprzednie opinie">←</button>
+      <div class="google-reviews-dots" data-reviews-dots>
+        {slides.map((_, i) => <button type="button" aria-label={`Pokaż zestaw opinii ${i + 1}`} aria-current={i === 0 ? "true" : undefined} data-reviews-dot={i}></button>)}
+      </div>
+      <button class="google-reviews-arrow" type="button" data-reviews-next aria-label="Następne opinie">→</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>("[data-reviews]")) {
+    const track = root.querySelector<HTMLElement>("[data-reviews-track]")!;
+    const slides = [...root.querySelectorAll<HTMLElement>("[data-reviews-slide]")];
+    const dots = [...root.querySelectorAll<HTMLButtonElement>("[data-reviews-dot]")];
+    let current = 0;
+
+    const go = (index: number) => {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      slides.forEach((slide, i) => slide.toggleAttribute("inert", i !== current));
+      dots.forEach((dot, i) => dot.toggleAttribute("aria-current", i === current));
+    };
+
+    root.querySelector("[data-reviews-prev]")?.addEventListener("click", () => go(current - 1));
+    root.querySelector("[data-reviews-next]")?.addEventListener("click", () => go(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener("click", () => go(i)));
+
+    let startX = 0;
+    track.addEventListener("touchstart", (event) => { startX = event.touches[0].clientX; }, { passive: true });
+    track.addEventListener("touchend", (event) => {
+      const delta = event.changedTouches[0].clientX - startX;
+      if (Math.abs(delta) > 45) go(current + (delta < 0 ? 1 : -1));
+    });
+
+    const updateMoreButtons = () => {
+      for (const card of root.querySelectorAll<HTMLElement>(".google-review")) {
+        const text = card.querySelector<HTMLElement>("[data-review-text]")!;
+        const more = card.querySelector<HTMLButtonElement>("[data-review-more]")!;
+        if (card.classList.contains("is-open")) continue;
+        more.hidden = text.scrollHeight <= text.clientHeight + 2;
+      }
+    };
+    root.querySelectorAll<HTMLButtonElement>("[data-review-more]").forEach((button) => button.addEventListener("click", () => {
+      const card = button.closest(".google-review")!;
+      const open = card.classList.toggle("is-open");
+      button.textContent = open ? "Zwiń" : "Czytaj więcej";
+      button.setAttribute("aria-expanded", String(open));
+    }));
+
+    go(0);
+    updateMoreButtons();
+    window.addEventListener("resize", updateMoreButtons);
+  }
+</script>

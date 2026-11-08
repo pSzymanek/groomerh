@@ -4,6 +4,6 @@ const query = encodeURIComponent(businessAddress);
 
 /** Google Maps iframe embed (no API key needed). */
 export const mapEmbedUrl = (zoom = 16) => `https://maps.google.com/maps?q=${query}&hl=pl&z=${zoom}&output=embed`;
-/** Universal link – on Android/iOS opens the Google Maps app when installed. */
-export const mapPlaceUrl = `https://www.google.com/maps/search/?api=1&query=${query}`;
+/** Groomer House Google business profile (map pin + reviews); opens the Google Maps app on mobile when installed. */
+export const mapPlaceUrl = "https://share.google/JekIgYv3gchotw5NF";
 export const mapDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${query}`;
