@@ -111,7 +111,7 @@ verify(robots.includes("Sitemap: https://groomerhouse.pl/sitemap.xml"), "Robots 
 const trackingResponse = await get("/api/tracking-config");
 verify(trackingResponse.status === 200, "Tracking config endpoint");
 verify(trackingResponse.headers.get("cache-control")?.includes("no-store"), "Tracking config not cached");
-verify(JSON.stringify(await trackingResponse.json()) === JSON.stringify({ga4Id:"",metaPixelId:""}), "No unconfigured tracking IDs");
+verify(JSON.stringify(await trackingResponse.json()) === JSON.stringify({ga4Id:"",metaPixelId:"",gtmContainerId:""}), "No unconfigured tracking IDs");
 const verification = await get("/googlec1a70dd1837c7567.html");
 verify(verification.status === 200 && (await verification.text()).includes("google-site-verification: googlec1a70dd1837c7567.html"), "GSC verification retained");
 for (const route of ["/sitemap_index.xml", "/wp-sitemap.xml", "/page-sitemap.xml", "/post-sitemap.xml"]) {
