@@ -1,0 +1,58 @@
+---
+import "../styles/installments-popup.css";
+---
+
+<dialog class="installments-popup" aria-labelledby="installments-popup-title" aria-describedby="installments-popup-text" data-installments-popup>
+  <button class="installments-popup-close" type="button" aria-label="Zamknij" data-installments-close>×</button>
+  <span class="installments-popup-badge">Raty</span>
+  <h2 id="installments-popup-title">Teraz za kurs groomerski zapłacisz w wygodnych ratach!</h2>
+  <p id="installments-popup-text">Płatność za kurs możesz rozłożyć na raty — nie musisz wpłacać od razu całej kwoty. Łatwiej zaplanujesz wydatki i zostawisz sobie środki na sprzęt na start w zawodzie.</p>
+  <div class="installments-popup-actions">
+    <a class="button button-dark" href="/rezerwacja/">Zarezerwuj miejsce na kursie <span aria-hidden="true">↗</span></a>
+    <button class="installments-popup-later" type="button" data-installments-close>Zamknij</button>
+  </div>
+  <div class="installments-popup-footer">
+    <span>Bezpieczne płatności online</span>
+    <img src="/images/ui/przelewy24.svg" alt="Przelewy24" width="160" height="56" loading="lazy" />
+  </div>
+</dialog>
+
+<script>
+  const popup = document.querySelector<HTMLDialogElement>("[data-installments-popup]");
+  const STORAGE_KEY = "gh_installments_popup_seen";
+
+  const alreadySeen = () => {
+    try { return sessionStorage.getItem(STORAGE_KEY) === "1"; } catch { return false; }
+  };
+  const markSeen = () => {
+    try { sessionStorage.setItem(STORAGE_KEY, "1"); } catch { /* storage unavailable */ }
+  };
+
+  if (popup && typeof popup.showModal === "function" && !alreadySeen()) {
+    const close = () => popup.close();
+    popup.querySelectorAll("[data-installments-close]").forEach((button) => button.addEventListener("click", close));
+    // Click on the backdrop (outside the dialog box) closes it.
+    popup.addEventListener("click", (event) => { if (event.target === popup) close(); });
+    popup.addEventListener("close", markSeen);
+
+    const open = () => {
+      if (popup.open || alreadySeen() || document.querySelector("dialog[open]")) return;
+      popup.showModal();
+      markSeen();
+    };
+    const schedule = () => window.setTimeout(open, 2500);
+
+    // A modal would make the cookie banner unclickable, so wait until it has been answered.
+    const cookieBanner = document.querySelector<HTMLElement>("[data-cookie-consent]");
+    window.setTimeout(() => {
+      if (cookieBanner && !cookieBanner.hidden) {
+        const observer = new MutationObserver(() => {
+          if (cookieBanner.hidden) { observer.disconnect(); schedule(); }
+        });
+        observer.observe(cookieBanner, { attributes: true, attributeFilter: ["hidden"] });
+      } else {
+        schedule();
+      }
+    }, 300);
+  }
+</script>

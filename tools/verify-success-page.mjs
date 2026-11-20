@@ -11,7 +11,7 @@ const response = await fetch(new URL(route, base));
 verify(response.status === (expected === "published" ? 200 : expected === "missing" ? 404 : 503), "Correct Page availability status");
 const $ = load(await response.text());
 verify($("main h1").length === 1, "Exactly one page title");
-verify($("main h1").text() === "Sukcesy naszych klientów", "Correct Polish title");
+verify($("main h1").text() === "Sukcesy naszych kursantów", "Correct Polish title");
 verify(response.headers.get("cache-control")?.includes("no-store"), "External cache cannot mask CMS edits/unpublishing");
 verify($("#desktop-course-menu a[href='/sukcesy-naszych-klientow/']").length === 1, "New desktop submenu link");
 verify($("#mobile-course-menu a[href='/sukcesy-naszych-klientow/']").length === 1, "New mobile submenu link");

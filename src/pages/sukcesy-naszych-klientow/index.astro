@@ -11,9 +11,9 @@ const unavailable = result.state === "unavailable";
 Astro.response.status = page ? 200 : unavailable ? 503 : 404;
 Astro.response.headers.set("Cache-Control", "private, no-store");
 if (unavailable) Astro.response.headers.set("Retry-After", "60");
-const title = page ? wordPressPageText(page.title.rendered) || "Sukcesy naszych klientów" : "Sukcesy naszych klientów";
+const title = page ? wordPressPageText(page.title.rendered) || "Sukcesy naszych kursantów" : "Sukcesy naszych kursantów";
 const content = page ? cleanWordPressPageHtml(page.content.rendered) : "";
-const description = wordPressPageText(content).slice(0, 155) || "Sukcesy naszych klientów — Groomer House w Bytomiu.";
+const description = wordPressPageText(content).slice(0, 155) || "Sukcesy naszych kursantów — Groomer House w Bytomiu.";
 const featured = page?._embedded?.["wp:featuredmedia"]?.[0];
 const image = featured?.source_url && /^https:\/\//i.test(featured.source_url) ? featured.source_url : undefined;
 ---

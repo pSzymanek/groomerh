@@ -14,13 +14,13 @@ Zarządzanie: **Wpisy → Wszystkie wpisy / Dodaj wpis**. Publikacje, edycje, zd
 
 Starter „Hello world!” pozostawiono w panelu, ale nie jest pokazywany na głównej domenie. Zdrowe API WordPressa jest jedynym źródłem listy, bez przywracania ukrytych/usuniętych wpisów z archiwum. Podczas awarii wykorzystywana jest ostatnia poprawna lista, a po restarcie awaryjna kopia trzech artykułów.
 
-## Sukcesy naszych klientów — strona edytowana w WordPressie
+## Sukcesy naszych kursantów — strona edytowana w WordPressie
 
 Adres publiczny: `https://groomerhouse.pl/sukcesy-naszych-klientow/`. Link znajduje się w podmenu **Kursy**, na komputerze i telefonie.
 
 23.10.2026 utworzono i opublikowano stronę w CMS (ID 938). Nie trzeba importować jej ponownie. Wstęp jest neutralny, bez wymyślonych historii klientów; właściwe realizacje i zdjęcia można dopisywać w edytorze blokowym.
 
-Zarządzanie: **Strony → Sukcesy naszych klientów → Edytuj**. To zwykła strona WordPressa, nie wpis blogowy i nie formularz Booknetic. Zachowaj jej slug `sukcesy-naszych-klientow` oraz widoczność **Publiczna / Opublikowana**. Nie trzeba zmieniać działających permalinków CMS.
+Zarządzanie: **Strony → Sukcesy naszych kursantów → Edytuj**. To zwykła strona WordPressa, nie wpis blogowy i nie formularz Booknetic. Zachowaj jej slug `sukcesy-naszych-klientow` oraz widoczność **Publiczna / Opublikowana**. Nie trzeba zmieniać działających permalinków CMS.
 
 - Tytuł, treść, zdjęcia i zdjęcie wyróżniające są odczytywane z REST API. Używaj zwykłych bloków WordPressa: akapit, nagłówek, obraz, galeria, kolumny, grupa, cytat, przyciski i tabela. Osadzone skrypty, formularze i iframe są pomijane.
 - Po kliknięciu **Zapisz / Aktualizuj** zmiany pojawią się na głównej domenie po maksymalnie około 30 sekundach. Nie wymagają nowego ZIP-a ani restartu Node. Zewnętrzny cache hostingu może wymagać wyczyszczenia.

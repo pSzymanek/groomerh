@@ -10,7 +10,7 @@ const js = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarg
 let moduleId = 0;
 const fresh = () => import(`data:text/javascript;base64,${Buffer.from(js + `\n// ${moduleId++}`).toString("base64")}`);
 const response = data => new Response(JSON.stringify(data), { headers: { "Content-Type": "application/json" } });
-const page = (text = "Pierwsza treść", extra = {}) => ({ id: 1500, slug: "sukcesy-naszych-klientow", status: "publish", title: { rendered: "Sukcesy naszych klientów" }, content: { rendered: `<p>${text}</p>` }, modified: "2026-10-23T12:00:00", ...extra });
+const page = (text = "Pierwsza treść", extra = {}) => ({ id: 1500, slug: "sukcesy-naszych-klientow", status: "publish", title: { rendered: "Sukcesy naszych kursantów" }, content: { rendered: `<p>${text}</p>` }, modified: "2026-10-23T12:00:00", ...extra });
 const originalFetch = globalThis.fetch;
 const originalNow = Date.now;
 const originalOrigin = process.env.WORDPRESS_URL;
