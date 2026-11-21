@@ -42,3 +42,4 @@
 .wordpress-content td,.wordpress-content th{border:1px solid var(--line);padding:12px;text-align:left}
 .cms-page-message h2{font-size:28px}
 @media(max-width:650px){.cms-page-hero{padding:38px 0 45px}.cms-page-hero .breadcrumb{font-size:11px}.cms-page-wrap{padding-block:28px 60px}.wordpress-content{font-size:16px}.wordpress-content .wp-block-columns{display:block}.wordpress-content .wp-block-column+.wp-block-column{margin-top:24px}.wordpress-content .wp-block-group{padding:20px}.wordpress-content .wp-block-media-text{grid-template-columns:minmax(0,1fr)}.wordpress-content .wp-block-buttons,.wordpress-content .wp-block-button,.wordpress-content .wp-block-button__link{width:100%}}
+.city-page-actions{display:flex;flex-wrap:wrap;gap:12px;margin:36px 0 0}

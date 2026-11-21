@@ -3,6 +3,7 @@ import { activePaths, pageDesign, photos, mediaPath } from "../lib/content";
 import { getPosts, postPath } from "../lib/wordpress";
 import { canonicalUrl, absoluteImageUrl, sitemapDate } from "../lib/seo";
 import { getSuccessPage, SUCCESS_PAGE_PATH } from "../lib/wordpress-pages";
+import { getCityTiles } from "../lib/wordpress-city-pages";
 
 const escapeXml = (value: string) => value.replace(/[<>&'\"]/g, (char) => ({
   "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;",
@@ -10,7 +11,7 @@ const escapeXml = (value: string) => value.replace(/[<>&'\"]/g, (char) => ({
 
 export const GET: APIRoute = async () => {
   if (process.env.SEO_NOINDEX === "true") return new Response(null, { status: 404 });
-  const [posts, successPage] = await Promise.all([getPosts(), getSuccessPage()]);
+  const [posts, successPage, cityTiles] = await Promise.all([getPosts(), getSuccessPage(), getCityTiles()]);
   const staticUrls = [...activePaths, "/blog/", "/rezerwacja/", "/dane-kontaktowe/", "/polityka-prywatnosci/", "/regulamin/"];
   const urls = new Map<string, { modified?: string; image?: string }>(staticUrls.map((route) => [route, {
     image: absoluteImageUrl(route === "/" ? photos.hero : pageDesign[route]?.photo),
@@ -20,6 +21,9 @@ export const GET: APIRoute = async () => {
       modified: sitemapDate(successPage.page.modified_gmt || successPage.page.modified),
       image: absoluteImageUrl(successPage.page._embedded?.["wp:featuredmedia"]?.[0]?.source_url),
     });
+  }
+  for (const tile of cityTiles) {
+    if (!urls.has(tile.href)) urls.set(tile.href, { modified: sitemapDate(tile.modified) });
   }
   for (const post of posts) {
     urls.set(postPath(post), {

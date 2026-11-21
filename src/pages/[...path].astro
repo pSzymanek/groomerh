@@ -5,18 +5,29 @@ import CoursePackages from "../components/CoursePackages.astro";
 import GoogleReviews from "../components/GoogleReviews.astro";
 import InstallmentsPopup from "../components/InstallmentsPopup.astro";
 import "../styles/course-hero.css";
+import "../styles/wordpress-page.css";
 import { currentCourseOffer } from "../lib/courses";
 import { activePaths, cleanPostHtml, getPage, pageDesign, photos } from "../lib/content";
 import { featuredImage, getPost } from "../lib/wordpress";
 import { stripHtml } from "../lib/snapshot";
 import { seoExcerpt } from "../lib/seo";
+import { getCityPage, getCityTiles } from "../lib/wordpress-city-pages";
+import { cleanWordPressPageHtml, wordPressPageText } from "../lib/wordpress-page-content";
 
 const route = `/${Astro.params.path || ""}/`.replace(/\/{2,}/g, "/");
 const redirects: Record<string, string> = { "/cennik-uslug/": "/cennik/", "/glowna/": "/", "/projekt/": "/", "/przykladowa-strona/": "/" };
 if (redirects[route]) return Astro.redirect(redirects[route], 301);
 const page = activePaths.includes(route) ? getPage(route) : undefined;
 const post = !page && route.split("/").filter(Boolean).length === 1 ? await getPost(Astro.params.path || "") : undefined;
-if (!page && !post) Astro.response.status = 404;
+// City landing pages managed in WordPress ("Kafelek miejscowości" checkbox).
+const citySlug = Astro.params.path || "";
+const cityResult = !page && !post && route.split("/").filter(Boolean).length === 1 ? await getCityPage(citySlug) : undefined;
+const cityPage = cityResult?.state === "published" ? cityResult.page : undefined;
+if (!page && !post && !cityPage) {
+  Astro.response.status = cityResult?.state === "unavailable" ? 503 : 404;
+  if (cityResult?.state === "unavailable") Astro.response.headers.set("Retry-After", "60");
+}
+if (cityPage) Astro.response.headers.set("Cache-Control", "private, no-store");
 const visibleBlocks = page?.path === "/kurs-groomerski/"
   ? page.blocks.filter((block) => !(
       block.type === "rich" && (block.html?.includes("Finansowanie kursu groomerskiego z Urzędu Pracy") || block.html?.includes("PAKIET 1"))
@@ -26,14 +37,32 @@ const visibleBlocks = page?.path === "/kurs-groomerski/"
 const reviewsIndex = visibleBlocks.findIndex((block) => block.type === "heading" && block.text?.trim().toLowerCase() === "opinie o kursie");
 const hasReviews = reviewsIndex !== -1;
 const contentBlocks = hasReviews ? visibleBlocks.filter((_, index) => index < reviewsIndex || index > reviewsIndex + 1) : visibleBlocks;
-const displayBlocks = contentBlocks.map(block => ({ ...block, html: route.includes("kurs-") && block.html ? currentCourseOffer(block.html) : block.html }));
+// "Szkolenia Groomerskie na Śląsku" tiles: keep tiles with a real page, drop "#" placeholders,
+// and append every WordPress page with the "Kafelek miejscowości" checkbox.
+let tiledBlocks = contentBlocks;
+const cityHeadingIndex = contentBlocks.findIndex((block) => block.type === "heading" && /szkolenia groomerskie na/i.test(block.text || ""));
+if (route === "/kurs-groomerski/" && cityHeadingIndex !== -1) {
+  const isCityButton = (block: (typeof contentBlocks)[number], index: number) => index > cityHeadingIndex && block.type === "button";
+  const kept = contentBlocks.filter((block, index) => !isCityButton(block, index) || (block.href && block.href !== "#"));
+  const cityButtons = kept.filter((block, index) => index > cityHeadingIndex && block.type === "button");
+  const known = new Set(cityButtons.map((block) => block.href));
+  const extra = (await getCityTiles()).filter((tile) => !known.has(tile.href) && !activePaths.includes(tile.href))
+    .map((tile) => ({ type: "button" as const, text: tile.title, href: tile.href }));
+  const lastButton = kept.findLastIndex((block, index) => index > cityHeadingIndex && block.type === "button");
+  const insertAt = lastButton !== -1 ? lastButton + 1 : cityHeadingIndex + 2;
+  tiledBlocks = [...kept.slice(0, insertAt), ...extra, ...kept.slice(insertAt)];
+}
+const displayBlocks = tiledBlocks.map(block => ({ ...block, html: route.includes("kurs-") && block.html ? currentCourseOffer(block.html) : block.html }));
 const design = pageDesign[route];
-const title = post ? stripHtml(post.title.rendered) : page?.title || "Nie znaleziono strony";
+const cityTitle = cityPage ? wordPressPageText(cityPage.title.rendered) || citySlug : undefined;
+const cityContent = cityPage ? cleanWordPressPageHtml(cityPage.content.rendered) : "";
+const cityImage = cityPage?._embedded?.["wp:featuredmedia"]?.[0];
+const title = post ? stripHtml(post.title.rendered) : page?.title || cityTitle || "Nie znaleziono strony";
 const cover = post ? await featuredImage(post) : undefined;
-const breadcrumbs = [{ name: "Strona główna", path: "/" }, ...(post ? [{ name: "Blog", path: "/blog/" }] : []), { name: title, path: route }];
+const breadcrumbs = [{ name: "Strona główna", path: "/" }, ...(post ? [{ name: "Blog", path: "/blog/" }] : []), ...(cityPage ? [{ name: "Kursy groomerskie", path: "/kurs-groomerski/" }] : []), { name: title, path: route }];
 const article = post ? { headline: title, publishedGmt: post.date_gmt, modifiedGmt: post.modified_gmt, image: cover } : undefined;
 ---
-<Layout title={`${title} | Groomer House`} path={route} noindex={!page && !post} type={post ? "article" : "website"} description={post ? seoExcerpt(post.excerpt.rendered, post.content.rendered) : design?.lead || "Groomer House — salon i centrum szkoleniowe w Bytomiu."} image={cover || design?.photo} imageAlt={post ? title : design?.photoAlt} breadcrumbs={breadcrumbs} article={article}>
+<Layout title={`${title} | Groomer House`} path={route} noindex={!page && !post && !cityPage} type={post ? "article" : "website"} description={post ? seoExcerpt(post.excerpt.rendered, post.content.rendered) : cityPage ? (wordPressPageText(cityContent).slice(0, 155) || `${title} — Groomer House w Bytomiu.`) : design?.lead || "Groomer House — salon i centrum szkoleniowe w Bytomiu."} image={cover || (cityImage?.source_url && /^https:\/\//i.test(cityImage.source_url) ? cityImage.source_url : undefined) || design?.photo} imageAlt={post || cityPage ? title : design?.photoAlt} breadcrumbs={breadcrumbs} article={article} modifiedGmt={cityPage?.modified_gmt}>
   {post ? <>
     <section class="post-hero"><div class="container"><div class="breadcrumb"><a href="/">Strona główna</a><span>/</span><a href="/blog/">Blog</a></div><span class="eyebrow">Poradnik Groomer House</span><h1 set:html={post.title.rendered} /><div class="post-meta"><time datetime={post.date.slice(0,10)}>{new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "long", year: "numeric" }).format(new Date(post.date))}</time></div></div></section>
     {cover && <div class="container"><img class="post-cover" src={cover} alt={title} /></div>}
@@ -44,5 +73,12 @@ const article = post ? { headline: title, publishedGmt: post.date_gmt, modifiedG
     {route === "/kurs-groomerski/" && <InstallmentsPopup />}
     <div class="container editorial-layout"><article class="article-content"><BlockStream blocks={displayBlocks} /></article><aside class="editorial-aside"><div class="aside-card"><span class="eyebrow">Groomer House</span><h3>Masz pytania?</h3><p>Chętnie opowiemy o usługach, terminach i szkoleniach.</p><a href="tel:+48607252521">+48 607 252 521 ↗</a><a href="/kurs-groomerski/">Kursy groomerskie ↗</a><a href="/cennik/">Salon i cennik ↗</a><a class="button button-dark" href="/rezerwacja/">Rezerwacja <span aria-hidden="true">↗</span></a></div></aside></div>
     {hasReviews && <GoogleReviews eyebrow="Opinie o kursie" title="Zobacz, co mówią moje kursantki" />}
-  </> : <div class="container legal-copy"><h1>Nie znaleziono strony</h1><p>Ta podstrona nie istnieje.</p><a class="button button-outline" href="/">Przejdź do strony głównej ↗</a></div>}
+  </> : cityPage ? <>
+    <section class="cms-page-hero"><div class="container"><nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/kurs-groomerski/">Kursy groomerskie</a><span aria-hidden="true">/</span><span>{title}</span></nav><span class="eyebrow">Groomer House · Bytom</span><h1>{title}</h1></div></section>
+    <div class="container cms-page-wrap"><article class="cms-page-content" data-wordpress-page={cityPage.id}>
+      {cityImage?.source_url && /^https:\/\//i.test(cityImage.source_url) && <figure class="cms-featured"><img src={cityImage.source_url} alt={cityImage.alt_text || ""} decoding="async" /></figure>}
+      <div class="wordpress-content" set:html={cityContent} />
+      <p class="city-page-actions"><a class="button button-dark" href="/rezerwacja/">Zarezerwuj miejsce na kursie <span aria-hidden="true">↗</span></a> <a class="button button-outline" href="/kurs-groomerski/">Zobacz pakiety kursu <span aria-hidden="true">↗</span></a></p>
+    </article></div>
+  </> : cityResult?.state === "unavailable" ? <div class="container legal-copy"><h1>Nie możemy teraz wczytać strony</h1><p>Spróbuj ponownie za chwilę.</p><a class="button button-outline" href={route}>Wczytaj ponownie ↗</a></div> : <div class="container legal-copy"><h1>Nie znaleziono strony</h1><p>Ta podstrona nie istnieje.</p><a class="button button-outline" href="/">Przejdź do strony głównej ↗</a></div>}
 </Layout>
