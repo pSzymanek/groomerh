@@ -97,6 +97,7 @@ function groomerhouse_is_operational_request(): bool
 /** Odpowiednik danego adresu WordPressa na groomerhouse.pl. */
 function groomerhouse_public_target(): string
 {
+    if (is_front_page()) return GROOMERHOUSE_PUBLIC_SITE . '/';
     if (is_singular('post')) {
         $post = get_queried_object();
         if ($post instanceof WP_Post && $post->post_name !== 'hello-world') return GROOMERHOUSE_PUBLIC_SITE . '/' . $post->post_name . '/';
